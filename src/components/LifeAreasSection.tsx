@@ -9,25 +9,25 @@ interface LifeAreaProps {
 }
 
 const LifeArea: React.FC<LifeAreaProps> = ({ icon, title, description, hasClipPath = false }) => (
-  <div className="bg-[rgba(16,17,31,1)] border w-[972px] max-w-full mt-5 px-[37px] py-[43px] rounded-[10px] border-[rgba(36,37,51,1)] border-solid max-md:px-5 max-md:py-6 max-md:w-[95%]">
-    <div className="gap-5 flex max-md:flex-col max-md:items-center max-md:text-center">
-      <div className="w-[16%] max-md:w-full max-md:ml-0">
+  <div className="bg-[rgba(16,17,31,1)] border w-[972px] max-w-full mt-5 px-[37px] py-[43px] rounded-[10px] border-[rgba(36,37,51,1)] border-solid max-lg:px-6 max-lg:py-8 max-lg:w-[90%] max-md:px-5 max-md:py-6 max-md:w-[95%]">
+    <div className="gap-5 flex max-lg:flex-col max-lg:items-center max-lg:text-center max-md:flex-col max-md:items-center max-md:text-center">
+      <div className="w-[16%] max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
         {hasClipPath ? (
-          <div className="flex w-[143px] shrink-0 h-[142px] max-md:w-[100px] max-md:h-[100px] max-md:mx-auto" />
+          <div className="flex w-[143px] shrink-0 h-[142px] max-lg:w-[120px] max-lg:h-[120px] max-lg:mx-auto max-md:w-[100px] max-md:h-[100px] max-md:mx-auto" />
         ) : (
           <img
             src={icon}
-            className="aspect-[1.01] object-contain w-[143px] shrink-0 max-w-full self-stretch my-auto max-md:w-[100px] max-md:mx-auto max-md:mt-0"
+            className="aspect-[1.01] object-contain w-[143px] shrink-0 max-w-full self-stretch my-auto max-lg:w-[120px] max-lg:mx-auto max-lg:mt-0 max-md:w-[100px] max-md:mx-auto max-md:mt-0"
             alt=""
           />
         )}
       </div>
-      <div className="w-[84%] ml-5 max-md:w-full max-md:ml-0">
-        <div className="flex grow flex-col items-stretch max-md:max-w-full max-md:mt-4">
-          <h3 className="text-white text-[32px] font-bold leading-[1.4] max-md:text-[24px]">
+      <div className="w-[84%] ml-5 max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
+        <div className="flex grow flex-col items-stretch max-lg:max-w-full max-lg:mt-4 max-md:max-w-full max-md:mt-4">
+          <h3 className="text-white text-[32px] font-bold leading-[1.4] max-lg:text-[28px] max-md:text-[24px]">
             {title}
           </h3>
-          <p className="text-[rgba(231,231,231,1)] text-[21px] font-normal leading-8 mt-[23px] max-md:max-w-full max-md:text-[16px] max-md:leading-6 max-md:mt-3">
+          <p className="text-[rgba(231,231,231,1)] text-[21px] font-normal leading-8 mt-[23px] max-lg:text-[18px] max-lg:leading-7 max-lg:mt-4 max-md:max-w-full max-md:text-[16px] max-md:leading-6 max-md:mt-3">
             {description}
           </p>
         </div>
@@ -39,11 +39,11 @@ const LifeArea: React.FC<LifeAreaProps> = ({ icon, title, description, hasClipPa
 export const LifeAreasSection: React.FC = () => {
   return (
     <section className="flex flex-col items-center">
-      <h2 className="text-white text-[57px] font-bold leading-[58px] text-center mt-[101px] max-md:max-w-full max-md:text-[28px] max-md:leading-[35px] max-md:mt-10 max-md:px-4">
+      <h2 className="text-white text-[57px] font-bold leading-[58px] text-center mt-[101px] max-lg:text-[42px] max-lg:leading-[48px] max-lg:mt-16 max-lg:px-4 max-md:max-w-full max-md:text-[28px] max-md:leading-[35px] max-md:mt-10 max-md:px-4">
         A transformação não é só interna,
         <br />é em todas as áreas da vida.
       </h2>
-      <p className="text-[rgba(231,231,231,1)] text-[21px] font-normal leading-8 text-center mt-[35px] max-md:max-w-full max-md:text-[18px] max-md:leading-7 max-md:mt-6 max-md:px-4">
+      <p className="text-[rgba(231,231,231,1)] text-[21px] font-normal leading-8 text-center mt-[35px] max-lg:text-[19px] max-lg:mt-6 max-lg:px-4 max-md:max-w-full max-md:text-[18px] max-md:leading-7 max-md:mt-6 max-md:px-4">
         A mentoria O Despertar da Vida foi criada para ativar sua transformação completa.
         <br />
         Floresça nas 7 áreas que realmente importam:
@@ -61,25 +61,25 @@ export const LifeAreasSection: React.FC = () => {
         description="Independência com consciência e mentalidade de abundância. Você vai quebrar os bloqueios financeiros, desenvolver uma relação saudável com o dinheiro e criar fluxos de renda alinhados com seu propósito."
       />
       
-      <div className="bg-[rgba(16,17,31,1)] border flex w-[972px] max-w-full flex-col items-stretch mt-5 px-[25px] py-[35px] rounded-[10px] border-[rgba(36,37,51,1)] border-solid max-md:px-5 max-md:py-6 max-md:w-[95%] max-md:text-center">
-        <div className="max-md:max-w-full max-md:mr-0">
-          <div className="gap-5 flex max-md:flex-col max-md:items-center">
-            <div className="w-[16%] max-md:w-full max-md:ml-0">
-              <div className="flex w-[143px] shrink-0 h-[142px] max-md:w-[100px] max-md:h-[100px] max-md:mx-auto" />
+      <div className="bg-[rgba(16,17,31,1)] border flex w-[972px] max-w-full flex-col items-stretch mt-5 px-[25px] py-[35px] rounded-[10px] border-[rgba(36,37,51,1)] border-solid max-lg:px-6 max-lg:py-8 max-lg:w-[90%] max-lg:text-center max-md:px-5 max-md:py-6 max-md:w-[95%] max-md:text-center">
+        <div className="max-lg:max-w-full max-lg:mr-0 max-md:max-w-full max-md:mr-0">
+          <div className="gap-5 flex max-lg:flex-col max-lg:items-center max-md:flex-col max-md:items-center">
+            <div className="w-[16%] max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
+              <div className="flex w-[143px] shrink-0 h-[142px] max-lg:w-[120px] max-lg:h-[120px] max-lg:mx-auto max-md:w-[100px] max-md:h-[100px] max-md:mx-auto" />
             </div>
-            <div className="w-[84%] ml-5 max-md:w-full max-md:ml-0">
-              <div className="flex flex-col self-stretch items-stretch my-auto max-md:max-w-full max-md:mt-4">
-                <h3 className="text-white text-[32px] font-bold leading-[1.4] max-md:text-[24px]">
+            <div className="w-[84%] ml-5 max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
+              <div className="flex flex-col self-stretch items-stretch my-auto max-lg:max-w-full max-lg:mt-4 max-md:max-w-full max-md:mt-4">
+                <h3 className="text-white text-[32px] font-bold leading-[1.4] max-lg:text-[28px] max-md:text-[24px]">
                   Emocional
                 </h3>
-                <p className="text-[rgba(231,231,231,1)] text-[21px] font-normal leading-8 mt-[23px] max-md:max-w-full max-md:text-[16px] max-md:leading-6 max-md:mt-3">
+                <p className="text-[rgba(231,231,231,1)] text-[21px] font-normal leading-8 mt-[23px] max-lg:text-[18px] max-lg:leading-7 max-lg:mt-4 max-md:max-w-full max-md:text-[16px] max-md:leading-6 max-md:mt-3">
                   Cura de feridas invisíveis e fortalecimento interno. Você não está travada por falta de capacidade. Está travada por bloqueios que ninguém vê — mas que sabotam cada tentativa de crescer.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <p className="text-[rgba(231,231,231,1)] text-[21px] font-normal leading-8 mt-[18px] max-md:max-w-full max-md:text-[16px] max-md:leading-6 max-md:mt-4">
+        <p className="text-[rgba(231,231,231,1)] text-[21px] font-normal leading-8 mt-[18px] max-lg:text-[18px] max-lg:leading-7 max-lg:mt-4 max-md:max-w-full max-md:text-[16px] max-md:leading-6 max-md:mt-4">
           A mentoria O Despertar da Vida foi criada pra quebrar essas correntes invisíveis. Aqui, você vai desbloquear traumas, emoções reprimidas e padrões herdados que te mantêm rodando em círculos. Libertar suas emoções é a chave pra liberar seu destino. E esse desbloqueio começa AGORA.
         </p>
       </div>
@@ -108,8 +108,8 @@ export const LifeAreasSection: React.FC = () => {
         description="Fale com clareza, coragem e autenticidade. Chega de se esconder, de ter medo de se expor, de não conseguir comunicar seu valor. Aqui você vai encontrar sua voz verdadeira e aprender a usá-la com poder e propósito."
       />
       
-      <div className="mt-[52px] max-md:mt-10 max-md:flex max-md:justify-center">
-        <CTAButton className="w-[520px] max-w-full max-md:max-w-[300px]">
+      <div className="mt-[52px] max-lg:mt-10 max-lg:flex max-lg:justify-center max-md:mt-10 max-md:flex max-md:justify-center">
+        <CTAButton className="w-[520px] max-w-full max-lg:max-w-[400px] max-md:max-w-[300px] max-sm:max-w-[280px]">
           QUERO PROSPERAR EM TODAS ÁS ÁREAS
         </CTAButton>
       </div>
