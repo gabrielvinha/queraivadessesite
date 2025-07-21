@@ -9,11 +9,9 @@ interface FeatureCardProps {
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ image, title, description }) => (
   <div className="bg-[rgba(24,27,33,1)] border flex grow flex-col items-stretch w-full pt-[33px] pb-[101px] px-[33px] rounded-[10px] border-[rgba(36,37,51,1)] border-solid max-lg:pt-6 max-lg:pb-12 max-lg:px-6 max-lg:mt-5 max-md:max-w-full max-md:mt-5 max-md:pb-8 max-md:px-5 max-md:pt-6">
-    <img
-      src={image}
-      className="aspect-[1.5] object-contain w-full rounded-[10px] max-md:max-w-full"
-      alt=""
-    />
+    <div className="aspect-[1.5] w-full rounded-[10px] max-md:max-w-full flex items-center justify-center bg-[rgba(36,37,51,0.3)]">
+      <div className="text-8xl max-lg:text-7xl max-md:text-6xl">{image}</div>
+    </div>
     <h3 className="text-white text-2xl font-bold leading-[1.4] mt-[35px] max-lg:text-[22px] max-lg:mt-6 max-lg:text-center max-md:text-[20px] max-md:mt-4 max-md:text-center">
       {title}
     </h3>
@@ -44,21 +42,21 @@ export const FeaturesSection: React.FC = () => {
         <div className="gap-5 flex max-lg:flex-col max-lg:items-stretch max-lg:space-y-5 max-lg:gap-0 max-md:flex-col max-md:items-stretch max-md:space-y-5 max-md:gap-0">
           <div className="w-[33%] max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
             <FeatureCard
-              image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/ebddcf85d8f1e5c5fca93426ac5d6aaec3f9c32d?placeholderIfAbsent=true"
+              image="🌟"
               title="Espiritualidade e Despertar Feminino"
               description="Reconecte com sua essência feminina sagrada e desperte a força interior que sempre esteve em você."
             />
           </div>
           <div className="w-[33%] ml-5 max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
             <FeatureCard
-              image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/1da997adaebafe9c09071932158db018fb87d5ef?placeholderIfAbsent=true"
+              image="🧠"
               title="Psicologia da Autossabotagem"
               description="Identifique e quebre os padrões inconscientes que sabotam seu crescimento e impedem sua evolução."
             />
           </div>
           <div className="w-[33%] ml-5 max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
             <FeatureCard
-              image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/d53263506c0d0e7c2e5f345ec3f5e9d3843a8ceb?placeholderIfAbsent=true"
+              image="🎯"
               title="Comunicação Autêntica e Oratória"
               description="Desenvolva sua voz única, comunique com clareza e impacto, e se torne uma líder inspiradora em sua área."
             />
@@ -70,21 +68,21 @@ export const FeaturesSection: React.FC = () => {
         <div className="gap-5 flex max-lg:flex-col max-lg:items-stretch max-lg:space-y-5 max-lg:gap-0 max-md:flex-col max-md:items-stretch max-md:space-y-5 max-md:gap-0">
           <div className="w-[33%] max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
             <FeatureCard
-              image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/e2f018d1c1e10e146cc0898c7e0f5b9b5bea1009?placeholderIfAbsent=true"
+              image="💰"
               title="Consciência Financeira e Mentalidade"
               description="Transforme sua relação com o dinheiro, desenvolva mentalidade de abundância e crie estratégias sustentáveis de prosperidade."
             />
           </div>
           <div className="w-[33%] ml-5 max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
             <FeatureCard
-              image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/6691f023ea5b3612fee51f141f5a7ce1c6bee275?placeholderIfAbsent=true"
+              image="🤝"
               title="Vendas com Propósito"
               description="Aprenda a vender de forma autêntica e alinhada com seus valores, sem manipulação ou pressão."
             />
           </div>
           <div className="w-[33%] ml-5 max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
             <FeatureCard
-              image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/a50c962438b611a410a253f4e8e8015a7592caf4?placeholderIfAbsent=true"
+              image="📱"
               title="Visibilidade Online com Estratégia"
               description="Construa uma presença digital autêntica e estratégica que atraia seu público ideal e gere resultados consistentes."
             />
@@ -92,39 +90,101 @@ export const FeaturesSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="w-[1260px] max-w-full mt-[296px] max-lg:mt-20 max-lg:px-6 max-md:mt-10 max-md:px-4">
-        <div className="gap-5 flex max-lg:flex-col max-lg:items-stretch max-lg:space-y-5 max-lg:gap-0 max-md:flex-col max-md:items-stretch max-md:space-y-5 max-md:gap-0">
-          <div className="w-[33%] max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
-            <ImageCard image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/dccb98bfe8a8f3ad8c5be3be4779226c86055c1b?placeholderIfAbsent=true" />
+      {/* Nova seção DESPERTAR */}
+      <section className="bg-black self-stretch flex w-full flex-col items-center justify-center mt-[296px] px-20 py-24 max-lg:px-10 max-lg:py-16 max-lg:mt-20 max-md:max-w-full max-md:px-5 max-md:py-12 max-md:mt-10">
+        <div className="flex w-[1200px] max-w-full flex-col items-center">
+          <h2 className="text-[rgba(255,215,0,1)] text-5xl font-bold leading-[1.4] text-center max-lg:text-4xl max-md:text-[28px]">
+            Cada letra é um passo. Cada passo é um despertar.
+          </h2>
+          <p className="text-[rgba(200,200,200,1)] text-[21px] font-normal text-center mt-6 max-lg:text-[19px] max-lg:mt-4 max-md:text-[18px] max-md:mt-4">
+            Descubra o significado profundo por trás da jornada que vai transformar sua vida.
+          </p>
+          
+          <div className="w-full mt-16 max-lg:mt-12 max-md:mt-10">
+            <div className="grid grid-cols-3 gap-8 max-lg:grid-cols-2 max-lg:gap-6 max-md:grid-cols-1 max-md:gap-5">
+              
+              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-8 rounded-lg max-lg:p-6 max-md:p-5">
+                <div className="text-[rgba(255,215,0,1)] text-6xl font-bold mb-4 max-lg:text-5xl max-md:text-4xl">D</div>
+                <h3 className="text-white text-2xl font-bold mb-3 max-lg:text-xl max-md:text-lg">Decisão</h3>
+                <p className="text-[rgba(200,200,200,1)] text-lg leading-relaxed max-lg:text-base max-md:text-sm">
+                  Tudo muda quando você decide. É o início da sua virada.
+                </p>
+              </div>
+              
+              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-8 rounded-lg max-lg:p-6 max-md:p-5">
+                <div className="text-[rgba(255,215,0,1)] text-6xl font-bold mb-4 max-lg:text-5xl max-md:text-4xl">E</div>
+                <h3 className="text-white text-2xl font-bold mb-3 max-lg:text-xl max-md:text-lg">Essência</h3>
+                <p className="text-[rgba(200,200,200,1)] text-lg leading-relaxed max-lg:text-base max-md:text-sm">
+                  Voltar pra quem você é de verdade. Sem máscaras, sem culpa.
+                </p>
+              </div>
+              
+              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-8 rounded-lg max-lg:p-6 max-md:p-5">
+                <div className="text-[rgba(255,215,0,1)] text-6xl font-bold mb-4 max-lg:text-5xl max-md:text-4xl">S</div>
+                <h3 className="text-white text-2xl font-bold mb-3 max-lg:text-xl max-md:text-lg">Sabedoria</h3>
+                <p className="text-[rgba(200,200,200,1)] text-lg leading-relaxed max-lg:text-base max-md:text-sm">
+                  Escolher com consciência e maturidade o que te expande.
+                </p>
+              </div>
+              
+              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-8 rounded-lg max-lg:p-6 max-md:p-5">
+                <div className="text-[rgba(255,215,0,1)] text-6xl font-bold mb-4 max-lg:text-5xl max-md:text-4xl">P</div>
+                <h3 className="text-white text-2xl font-bold mb-3 max-lg:text-xl max-md:text-lg">Propósito</h3>
+                <p className="text-[rgba(200,200,200,1)] text-lg leading-relaxed max-lg:text-base max-md:text-sm">
+                  Viver com sentido, sabendo exatamente o porquê do que faz.
+                </p>
+              </div>
+              
+              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-8 rounded-lg max-lg:p-6 max-md:p-5">
+                <div className="text-[rgba(255,215,0,1)] text-6xl font-bold mb-4 max-lg:text-5xl max-md:text-4xl">E</div>
+                <h3 className="text-white text-2xl font-bold mb-3 max-lg:text-xl max-md:text-lg">Espiritualidade</h3>
+                <p className="text-[rgba(200,200,200,1)] text-lg leading-relaxed max-lg:text-base max-md:text-sm">
+                  Reconectar com a força que te criou e te sustenta.
+                </p>
+              </div>
+              
+              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-8 rounded-lg max-lg:p-6 max-md:p-5">
+                <div className="text-[rgba(255,215,0,1)] text-6xl font-bold mb-4 max-lg:text-5xl max-md:text-4xl">R</div>
+                <h3 className="text-white text-2xl font-bold mb-3 max-lg:text-xl max-md:text-lg">Resiliência</h3>
+                <p className="text-[rgba(200,200,200,1)] text-lg leading-relaxed max-lg:text-base max-md:text-sm">
+                  Levantar mesmo quando a vida tenta te calar.
+                </p>
+              </div>
+              
+              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-8 rounded-lg max-lg:p-6 max-md:p-5">
+                <div className="text-[rgba(255,215,0,1)] text-6xl font-bold mb-4 max-lg:text-5xl max-md:text-4xl">T</div>
+                <h3 className="text-white text-2xl font-bold mb-3 max-lg:text-xl max-md:text-lg">Transbordo</h3>
+                <p className="text-[rgba(200,200,200,1)] text-lg leading-relaxed max-lg:text-base max-md:text-sm">
+                  Compartilhar sua luz com o mundo — sem medo de brilhar.
+                </p>
+              </div>
+              
+              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-8 rounded-lg max-lg:p-6 max-md:p-5">
+                <div className="text-[rgba(255,215,0,1)] text-6xl font-bold mb-4 max-lg:text-5xl max-md:text-4xl">A</div>
+                <h3 className="text-white text-2xl font-bold mb-3 max-lg:text-xl max-md:text-lg">Amor</h3>
+                <p className="text-[rgba(200,200,200,1)] text-lg leading-relaxed max-lg:text-base max-md:text-sm">
+                  Curar com amor, escolher com amor, viver com amor.
+                </p>
+              </div>
+              
+              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-8 rounded-lg max-lg:p-6 max-md:p-5 max-lg:col-span-2 max-lg:mx-auto max-lg:max-w-md max-md:col-span-1">
+                <div className="text-[rgba(255,215,0,1)] text-6xl font-bold mb-4 max-lg:text-5xl max-md:text-4xl">R</div>
+                <h3 className="text-white text-2xl font-bold mb-3 max-lg:text-xl max-md:text-lg">Realização</h3>
+                <p className="text-[rgba(200,200,200,1)] text-lg leading-relaxed max-lg:text-base max-md:text-sm">
+                  Materializar seus sonhos com leveza e presença.
+                </p>
+              </div>
+              
+            </div>
           </div>
-          <div className="w-[33%] ml-5 max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
-            <ImageCard image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/afe5fb24749d0add9b54da21850d3f5628beb101?placeholderIfAbsent=true" />
-          </div>
-          <div className="w-[33%] ml-5 max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
-            <ImageCard image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/9a088db4f49e77243a92613f11e1127d663b6664?placeholderIfAbsent=true" />
+          
+          <div className="mt-16 max-lg:mt-12 max-md:mt-10">
+            <CTAButton className="w-[520px] max-w-full max-lg:max-w-[400px] max-md:max-w-[300px] max-sm:max-w-[280px]">
+              QUERO VIVER MEU DESPERTAR
+            </CTAButton>
           </div>
         </div>
-      </div>
-
-      <div className="w-[1260px] max-w-full mt-10 max-lg:px-6 max-md:px-4">
-        <div className="gap-5 flex max-lg:flex-col max-lg:items-stretch max-lg:space-y-5 max-lg:gap-0 max-md:flex-col max-md:items-stretch max-md:space-y-5 max-md:gap-0">
-          <div className="w-[33%] max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
-            <ImageCard image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/50e2d4a140f2918f7489e778f541df84db9145c4?placeholderIfAbsent=true" />
-          </div>
-          <div className="w-[33%] ml-5 max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
-            <ImageCard image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/a4aaa73dce3586a54136bb2954213eb97347fc29?placeholderIfAbsent=true" />
-          </div>
-          <div className="w-[33%] ml-5 max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
-            <ImageCard image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/04889ac2d401a92de11c5ecfeca9280c61df3605?placeholderIfAbsent=true" />
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-[30px] max-lg:mt-8 max-lg:flex max-lg:justify-center max-lg:px-6 max-md:mt-8 max-md:flex max-md:justify-center max-md:px-4">
-        <CTAButton variant="secondary" className="w-[472px] max-w-full max-lg:max-w-[350px] max-md:max-w-[300px] max-sm:max-w-[280px]">
-          QUERO FALAR COM A MENTORA
-        </CTAButton>
-      </div>
+      </section>
     </section>
   );
 };

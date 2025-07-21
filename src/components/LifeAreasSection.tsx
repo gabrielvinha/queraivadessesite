@@ -15,11 +15,17 @@ const LifeArea: React.FC<LifeAreaProps> = ({ icon, title, description, hasClipPa
         {hasClipPath ? (
           <div className="flex w-[143px] shrink-0 h-[142px] max-lg:w-[120px] max-lg:h-[120px] max-lg:mx-auto max-md:w-[100px] max-md:h-[100px] max-md:mx-auto" />
         ) : (
-          <img
-            src={icon}
-            className="aspect-[1.01] object-contain w-[143px] shrink-0 max-w-full self-stretch my-auto max-lg:w-[120px] max-lg:mx-auto max-lg:mt-0 max-md:w-[100px] max-md:mx-auto max-md:mt-0"
-            alt=""
-          />
+          typeof icon === 'string' && icon.startsWith('http') ? (
+            <img
+              src={icon}
+              className="aspect-[1.01] object-contain w-[143px] shrink-0 max-w-full self-stretch my-auto max-lg:w-[120px] max-lg:mx-auto max-lg:mt-0 max-md:w-[100px] max-md:mx-auto max-md:mt-0"
+              alt=""
+            />
+          ) : (
+            <div className="flex w-[143px] shrink-0 h-[142px] max-lg:w-[120px] max-lg:h-[120px] max-lg:mx-auto max-md:w-[100px] max-md:h-[100px] max-md:mx-auto items-center justify-center">
+              <div className="text-6xl max-lg:text-5xl max-md:text-4xl">{icon}</div>
+            </div>
+          )
         )}
       </div>
       <div className="w-[84%] ml-5 max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
@@ -39,11 +45,11 @@ const LifeArea: React.FC<LifeAreaProps> = ({ icon, title, description, hasClipPa
 export const LifeAreasSection: React.FC = () => {
   return (
     <section className="flex flex-col items-center">
-      <h2 className="text-white text-[57px] font-bold leading-[58px] text-center mt-[101px] max-lg:text-[42px] max-lg:leading-[48px] max-lg:mt-16 max-lg:px-4 max-md:max-w-full max-md:text-[28px] max-md:leading-[35px] max-md:mt-10 max-md:px-4">
+      <h2 className="text-[rgba(8,9,20,1)] text-[57px] font-bold leading-[58px] text-center mt-[101px] max-lg:text-[42px] max-lg:leading-[48px] max-lg:mt-16 max-lg:px-4 max-md:max-w-full max-md:text-[28px] max-md:leading-[35px] max-md:mt-10 max-md:px-4">
         A transformação não é só interna,
         <br />é em todas as áreas da vida.
       </h2>
-      <p className="text-[rgba(231,231,231,1)] text-[21px] font-normal leading-8 text-center mt-[35px] max-lg:text-[19px] max-lg:mt-6 max-lg:px-4 max-md:max-w-full max-md:text-[18px] max-md:leading-7 max-md:mt-6 max-md:px-4">
+      <p className="text-[rgba(46,46,46,1)] text-[21px] font-normal leading-8 text-center mt-[35px] max-lg:text-[19px] max-lg:mt-6 max-lg:px-4 max-md:max-w-full max-md:text-[18px] max-md:leading-7 max-md:mt-6 max-md:px-4">
         A mentoria O Despertar da Vida foi criada para ativar sua transformação completa.
         <br />
         Floresça nas 7 áreas que realmente importam:
@@ -65,7 +71,9 @@ export const LifeAreasSection: React.FC = () => {
         <div className="max-lg:max-w-full max-lg:mr-0 max-md:max-w-full max-md:mr-0">
           <div className="gap-5 flex max-lg:flex-col max-lg:items-center max-md:flex-col max-md:items-center">
             <div className="w-[16%] max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
-              <div className="flex w-[143px] shrink-0 h-[142px] max-lg:w-[120px] max-lg:h-[120px] max-lg:mx-auto max-md:w-[100px] max-md:h-[100px] max-md:mx-auto" />
+              <div className="flex w-[143px] shrink-0 h-[142px] max-lg:w-[120px] max-lg:h-[120px] max-lg:mx-auto max-md:w-[100px] max-md:h-[100px] max-md:mx-auto items-center justify-center">
+                <div className="text-6xl max-lg:text-5xl max-md:text-4xl">💝</div>
+              </div>
             </div>
             <div className="w-[84%] ml-5 max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
               <div className="flex flex-col self-stretch items-stretch my-auto max-lg:max-w-full max-lg:mt-4 max-md:max-w-full max-md:mt-4">
@@ -90,20 +98,34 @@ export const LifeAreasSection: React.FC = () => {
         description="Posicionamento, vendas com verdade e visibilidade. Não importa de onde você veio — importa como você se posiciona. Aqui você vai desenvolver sua presença autêntica, aprender a vender com propósito e construir uma carreira que tenha significado."
       />
       
-      <LifeArea
-        icon="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/78d3c6f9a1adc3840928369c81ffb33f91f61eaf?placeholderIfAbsent=true"
-        title="Familiar"
-        description="Equilíbrio entre missão e relações. De que adianta conquistar o mundo e perder sua casa? Na mentoria, a transformação é completa. Você vai fortalecer o vínculo com sua família e parar de sacrificar seus relacionamentos no altar da ambição."
-      />
+      <div className="bg-[rgba(16,17,31,1)] border w-[972px] max-w-full mt-5 px-[37px] py-[43px] rounded-[10px] border-[rgba(36,37,51,1)] border-solid max-lg:px-6 max-lg:py-8 max-lg:w-[90%] max-md:px-5 max-md:py-6 max-md:w-[95%]">
+        <div className="gap-5 flex max-lg:flex-col max-lg:items-center max-lg:text-center max-md:flex-col max-md:items-center max-md:text-center">
+          <div className="w-[16%] max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
+            <div className="flex w-[143px] shrink-0 h-[142px] max-lg:w-[120px] max-lg:h-[120px] max-lg:mx-auto max-md:w-[100px] max-md:h-[100px] max-md:mx-auto items-center justify-center">
+              <div className="text-6xl max-lg:text-5xl max-md:text-4xl">👨‍👩‍👧‍👦</div>
+            </div>
+          </div>
+          <div className="w-[84%] ml-5 max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
+            <div className="flex grow flex-col items-stretch max-lg:max-w-full max-lg:mt-4 max-md:max-w-full max-md:mt-4">
+              <h3 className="text-white text-[32px] font-bold leading-[1.4] max-lg:text-[28px] max-md:text-[24px]">
+                Familiar
+              </h3>
+              <p className="text-[rgba(231,231,231,1)] text-[21px] font-normal leading-8 mt-[23px] max-lg:text-[18px] max-lg:leading-7 max-lg:mt-4 max-md:max-w-full max-md:text-[16px] max-md:leading-6 max-md:mt-3">
+                Equilíbrio entre missão e relações. De que adianta conquistar o mundo e perder sua casa? Na mentoria, a transformação é completa. Você vai fortalecer o vínculo com sua família e parar de sacrificar seus relacionamentos no altar da ambição.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       
       <LifeArea
-        icon="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/aad98d21271a4c7e4ccf6d58a8b0b6ba77f79f5f?placeholderIfAbsent=true"
+        icon="💪"
         title="Corpo"
         description="Vitalidade para sustentar o que você está construindo. Pra transformar, precisa ter energia. Chega de acordar cansada, improdutiva, ausente. Seu corpo precisa servir à sua missão — não te sabotar. Você vai aprender a se cuidar pra suportar a grandeza que quer construir."
       />
       
       <LifeArea
-        icon="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/309c245deb18f3337327a22717a57651b2c5068c?placeholderIfAbsent=true"
+        icon="🎤"
         title="Voz"
         description="Fale com clareza, coragem e autenticidade. Chega de se esconder, de ter medo de se expor, de não conseguir comunicar seu valor. Aqui você vai encontrar sua voz verdadeira e aprender a usá-la com poder e propósito."
       />

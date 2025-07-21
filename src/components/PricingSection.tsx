@@ -143,7 +143,7 @@ export const PricingSection: React.FC = () => {
           </div>
           
           <div className="mt-[27px] max-lg:mt-6 max-md:mt-6">
-            <CTAButton className="w-[420px] max-w-full max-lg:max-w-[350px] max-md:max-w-[300px] max-sm:max-w-[280px]">
+            <CTAButton variant="primary" className="w-[420px] max-w-full max-lg:max-w-[350px] max-md:max-w-[300px] max-sm:max-w-[280px]">
               QUERO FALAR COM A MENTORA
             </CTAButton>
           </div>
