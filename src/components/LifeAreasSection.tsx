@@ -102,7 +102,7 @@ export const LifeAreasSection: React.FC = () => {
         <div className="gap-5 flex flex-col md:flex-row items-center md:items-start text-center md:text-left">
           <div className="w-full md:w-[16%] flex justify-center md:justify-start">
             <div className="flex w-20 sm:w-24 md:w-28 lg:w-32 xl:w-[143px] shrink-0 h-20 sm:h-24 md:h-28 lg:h-32 xl:h-[142px] items-center justify-center">
-              <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">👨‍👩‍👧‍👦</div>
+              <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">https://cdn-icons-png.flaticon.com/512/817/817918.png</div>
             </div>
           </div>
           <div className="w-full md:w-[84%] md:ml-5 mt-4 md:mt-0">
