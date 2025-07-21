@@ -4,7 +4,7 @@ export const GuaranteeSection: React.FC = () => {
   return (
     <section className="flex flex-col items-center px-4 sm:px-6 md:px-8">
       <img
-        src="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/67949353a2fde1f5e9b73ff04e89d20dcb6199eb?placeholderIfAbsent=true"
+        src="https://i.postimg.cc/C5h57p55/a58cfaf5-e5d1-4568-ba32-f067a979dc7b.png"
         className="aspect-[1.25] object-contain w-24 sm:w-32 md:w-40 lg:w-48 max-w-full mt-2.5"
         alt="Guarantee badge"
       />
