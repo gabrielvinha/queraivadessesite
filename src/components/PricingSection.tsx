@@ -92,7 +92,7 @@ export const PricingSection: React.FC = () => {
       <div className="self-stretch flex w-full flex-col items-center text-center justify-center mt-10 sm:mt-12 md:mt-16 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-12 sm:py-16 md:py-20 lg:py-24">
         <div className="bg-[rgba(21,24,30,1)] border flex w-full max-w-[640px] flex-col items-center px-4 sm:px-6 md:px-8 py-6 sm:py-8 md:py-9 rounded-lg border-[rgba(255,228,191,1)] border-solid">
           <img
-            src="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/1f2f5c2cf04bf1862ab5857dd4216fd0a4f77d76?placeholderIfAbsent=true"
+            src="https://i.postimg.cc/7hfXfd4G/cf5ad3c2-1a76-4a5b-86e5-41b65a6f86b6.png"
             className="aspect-[1.36] object-contain w-32 sm:w-40 md:w-48 lg:w-52 max-w-full"
             alt=""
           />
