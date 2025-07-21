@@ -4,8 +4,12 @@ import { CTAButton } from './CTAButton';
 export const HeroSection: React.FC = () => {
   return (
     <section className="flex flex-col self-stretch relative min-h-screen w-full justify-center px-20 py-20 max-lg:px-10 max-lg:py-16 max-md:px-5 max-md:py-12 overflow-hidden">
-      {/* Fundo escuro com elementos gráficos sutis */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0A0A0A] via-[#1A1A1A] to-[#0F0F0F]"></div>
+      {/* Imagem de fundo */}
+      <img
+        src="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/dbe7fd4f2a1af7e0fe12b70a43b1a375f675e0c9?placeholderIfAbsent=true"
+        className="absolute h-full w-full object-cover inset-0"
+        alt="Background"
+      />
       
       {/* Elementos decorativos dourados */}
       <div className="absolute top-20 right-20 w-32 h-32 rounded-full border border-[rgba(248,226,154,0.2)] opacity-60 max-lg:w-24 max-lg:h-24 max-lg:top-16 max-lg:right-16 max-md:w-16 max-md:h-16 max-md:top-10 max-md:right-10"></div>
