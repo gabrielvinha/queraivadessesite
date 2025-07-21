@@ -13,7 +13,7 @@ export const HeroSection: React.FC = () => {
       
       {/* Imagem de fundo para mobile */}
       <img
-        src="https://i.postimg.cc/gc3jDQnm/O-Brasil-est-entrando-em-colapso-e-quem-n-o-fizer-parte-da-nova-alian-a-vai-ser-engolido-N-o-somos.png"
+        src="https://i.postimg.cc/br3dW1T0/O-Brasil-est-entrando-em-colapso-e-quem-n-o-fizer-parte-da-nova-alian-a-vai-ser-engolido-N-o-somos.png"
         className="absolute h-full w-full object-cover inset-0 block md:hidden"
         alt="Background Mobile"
       />
