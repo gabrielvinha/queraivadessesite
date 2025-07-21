@@ -33,15 +33,15 @@ export const CTAButton: React.FC<CTAButtonProps> = ({
 
   return (
     <button 
-      className={`${baseClasses} ${variantClasses} ${className}`}
+      className={`${baseClasses} ${variantClasses} ${className} text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl`}
       onClick={handleClick}
     >
-      <div className="z-10 grow shrink basis-auto my-auto px-8 py-5 max-lg:px-7 max-lg:py-4 max-md:px-6 max-md:py-4 max-sm:px-5 max-sm:py-3">
+      <div className="z-10 grow shrink basis-auto my-auto px-4 sm:px-5 md:px-6 lg:px-7 xl:px-8 py-3 sm:py-4 md:py-5">
         {children}
       </div>
       <img
         src="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/505b5319db853ee62869f92a9d71903ed9ace4bf?placeholderIfAbsent=true"
-        className="aspect-[0.98] object-contain w-[43px] shrink-0 max-lg:w-[38px] max-md:w-[35px] max-sm:w-[30px]"
+        className="aspect-[0.98] object-contain w-6 sm:w-7 md:w-8 lg:w-9 xl:w-10 shrink-0"
         alt=""
       />
     </button>

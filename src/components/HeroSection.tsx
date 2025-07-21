@@ -3,30 +3,37 @@ import { CTAButton } from './CTAButton';
 
 export const HeroSection: React.FC = () => {
   return (
-    <section className="flex flex-col self-stretch relative min-h-screen w-full justify-center px-20 py-20 max-lg:px-10 max-lg:py-16 max-md:px-5 max-md:py-12 overflow-hidden">
+    <section className="flex flex-col self-stretch relative min-h-screen w-full justify-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-8 sm:py-12 md:py-16 lg:py-20 overflow-hidden">
       {/* Imagem de fundo */}
       <img
         src="https://i.postimg.cc/PqMv276C/O-Brasil-est-entrando-em-colapso-e-quem-n-o-fizer-parte-da-nova-alian-a-vai-ser-engolido-N-o-somos.png"
-        className="absolute h-full w-full object-cover inset-0"
+        className="absolute h-full w-full object-cover inset-0 hidden md:block"
         alt="Background"
       />
       
+      {/* Imagem de fundo para mobile */}
+      <img
+        src="https://i.postimg.cc/gc3jDQnm/O-Brasil-est-entrando-em-colapso-e-quem-n-o-fizer-parte-da-nova-alian-a-vai-ser-engolido-N-o-somos.png"
+        className="absolute h-full w-full object-cover inset-0 block md:hidden"
+        alt="Background Mobile"
+      />
+      
       {/* Elementos decorativos dourados */}
-      <div className="absolute top-20 right-20 w-32 h-32 rounded-full border border-[rgba(248,226,154,0.2)] opacity-60 max-lg:w-24 max-lg:h-24 max-lg:top-16 max-lg:right-16 max-md:w-16 max-md:h-16 max-md:top-10 max-md:right-10"></div>
-      <div className="absolute bottom-32 left-16 w-24 h-24 rounded-full border border-[rgba(248,226,154,0.15)] opacity-40 max-lg:w-20 max-lg:h-20 max-lg:bottom-24 max-lg:left-12 max-md:w-12 max-md:h-12 max-md:bottom-16 max-md:left-8"></div>
-      <div className="absolute top-1/2 right-1/3 w-2 h-2 bg-[rgba(248,226,154,0.6)] rounded-full animate-pulse max-md:hidden"></div>
-      <div className="absolute top-1/3 left-1/4 w-1 h-1 bg-[rgba(248,226,154,0.4)] rounded-full animate-pulse max-md:hidden"></div>
+      <div className="absolute top-12 sm:top-16 md:top-20 right-4 sm:right-8 md:right-16 lg:right-20 w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 lg:w-32 lg:h-32 rounded-full border border-[rgba(248,226,154,0.2)] opacity-60"></div>
+      <div className="absolute bottom-16 sm:bottom-20 md:bottom-24 lg:bottom-32 left-4 sm:left-8 md:left-12 lg:left-16 w-8 h-8 sm:w-12 sm:h-12 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full border border-[rgba(248,226,154,0.15)] opacity-40"></div>
+      <div className="absolute top-1/2 right-1/3 w-2 h-2 bg-[rgba(248,226,154,0.6)] rounded-full animate-pulse hidden md:block"></div>
+      <div className="absolute top-1/3 left-1/4 w-1 h-1 bg-[rgba(248,226,154,0.4)] rounded-full animate-pulse hidden md:block"></div>
       
       {/* Conteúdo principal */}
-      <div className="relative flex w-full max-w-[1200px] mx-auto flex-col items-start max-lg:items-center max-md:items-center">
+      <div className="relative flex w-full max-w-[1200px] mx-auto flex-col items-start md:items-start items-center text-center md:text-left">
         {/* Selo no topo */}
-        <div className="text-[rgba(255,255,255,0.7)] text-[20px] font-medium mb-8 max-lg:text-center max-lg:text-[18px] max-md:text-center max-md:text-[16px] max-md:mb-6" style={{ fontFamily: 'Poppins, sans-serif' }}>
+        <div className="text-[rgba(255,255,255,0.7)] text-sm sm:text-base md:text-lg lg:text-xl font-medium mb-4 sm:mb-6 md:mb-8" style={{ fontFamily: 'Poppins, sans-serif' }}>
           Mentoria Exclusiva para Mulheres que Querem Prosperar com Propósito
         </div>
         
         {/* Título principal */}
         <h1 
-          className="text-[#F8E29A] text-[48px] font-extrabold leading-[1.2] mb-6 max-lg:text-center max-lg:text-[40px] max-md:text-center max-md:text-[32px] max-md:mb-4"
+          className="text-[#F8E29A] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-[1.2] mb-4 sm:mb-6"
           style={{ 
             fontFamily: 'Montserrat, sans-serif',
             letterSpacing: '-0.5px',
@@ -38,7 +45,7 @@ export const HeroSection: React.FC = () => {
         
         {/* Subheadline */}
         <p 
-          className="text-[rgba(255,255,255,0.7)] text-[20px] font-medium leading-[1.5] mb-10 max-w-[60%] max-lg:text-center max-lg:max-w-[80%] max-lg:text-[18px] max-md:text-center max-md:max-w-[100%] max-md:text-[16px] max-md:mb-8"
+          className="text-[rgba(255,255,255,0.7)] text-sm sm:text-base md:text-lg lg:text-xl font-medium leading-[1.5] mb-6 sm:mb-8 md:mb-10 max-w-full md:max-w-[80%] lg:max-w-[70%] xl:max-w-[60%]"
           style={{ fontFamily: 'Poppins, sans-serif' }}
         >
           Transforme sua essência, destrave seus bloqueios e construa uma vida próspera em todas as áreas.
@@ -46,7 +53,7 @@ export const HeroSection: React.FC = () => {
         
         {/* Botão principal */}
         <button 
-          className="bg-[#F8E29A] text-[#1A1A1A] font-semibold text-[18px] px-10 py-5 rounded-[40px] flex items-center gap-3 hover:bg-[#F5D982] transition-all duration-300 hover:scale-105 max-lg:text-[16px] max-lg:px-8 max-lg:py-4 max-md:text-[14px] max-md:px-6 max-md:py-3"
+          className="bg-[#F8E29A] text-[#1A1A1A] font-semibold text-sm sm:text-base md:text-lg px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 rounded-[40px] flex items-center gap-2 sm:gap-3 hover:bg-[#F5D982] transition-all duration-300 hover:scale-105"
           style={{ fontFamily: 'Montserrat, sans-serif' }}
           onClick={() => {
             const phoneNumber = "5519993401563";
@@ -56,7 +63,7 @@ export const HeroSection: React.FC = () => {
           }}
         >
           QUERO VIVER ESSA TRANSFORMAÇÃO
-          <span className="text-[14px] max-md:text-[12px]">↗</span>
+          <span className="text-xs sm:text-sm">↗</span>
         </button>
       </div>
     </section>

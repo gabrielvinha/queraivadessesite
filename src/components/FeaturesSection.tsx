@@ -38,139 +38,87 @@ const ImageCard: React.FC<ImageCardProps> = ({ image }) => (
 export const FeaturesSection: React.FC = () => {
   return (
     <section className="flex flex-col items-center">
-      <div className="w-full max-w-[1772px] mt-[271px] max-lg:mt-20 max-lg:px-6 max-md:max-w-full max-md:mt-10 max-md:px-4">
-        <div className="gap-5 flex max-lg:flex-col max-lg:items-stretch max-lg:space-y-5 max-lg:gap-0 max-md:flex-col max-md:items-stretch max-md:space-y-5 max-md:gap-0">
-          <div className="w-[33%] max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
-            <FeatureCard
-              image="🌟"
-              title="Espiritualidade e Despertar Feminino"
-              description="Reconecte com sua essência feminina sagrada e desperte a força interior que sempre esteve em você."
-            />
-          </div>
-          <div className="w-[33%] ml-5 max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
-            <FeatureCard
-              image="🧠"
-              title="Psicologia da Autossabotagem"
-              description="Identifique e quebre os padrões inconscientes que sabotam seu crescimento e impedem sua evolução."
-            />
-          </div>
-          <div className="w-[33%] ml-5 max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
-            <FeatureCard
-              image="🎯"
-              title="Comunicação Autêntica e Oratória"
-              description="Desenvolva sua voz única, comunique com clareza e impacto, e se torne uma líder inspiradora em sua área."
-            />
-          </div>
-        </div>
-      </div>
-
-      <div className="w-full max-w-[1772px] mt-10 max-lg:px-6 max-md:max-w-full max-md:px-4">
-        <div className="gap-5 flex max-lg:flex-col max-lg:items-stretch max-lg:space-y-5 max-lg:gap-0 max-md:flex-col max-md:items-stretch max-md:space-y-5 max-md:gap-0">
-          <div className="w-[33%] max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
-            <FeatureCard
-              image="💰"
-              title="Consciência Financeira e Mentalidade"
-              description="Transforme sua relação com o dinheiro, desenvolva mentalidade de abundância e crie estratégias sustentáveis de prosperidade."
-            />
-          </div>
-          <div className="w-[33%] ml-5 max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
-            <FeatureCard
-              image="🤝"
-              title="Vendas com Propósito"
-              description="Aprenda a vender de forma autêntica e alinhada com seus valores, sem manipulação ou pressão."
-            />
-          </div>
-          <div className="w-[33%] ml-5 max-lg:w-full max-lg:ml-0 max-md:w-full max-md:ml-0">
-            <FeatureCard
-              image="📱"
-              title="Visibilidade Online com Estratégia"
-              description="Construa uma presença digital autêntica e estratégica que atraia seu público ideal e gere resultados consistentes."
-            />
-          </div>
-        </div>
-      </div>
-
-      {/* Nova seção DESPERTAR */}
-      <section className="bg-black self-stretch flex w-full flex-col items-center justify-center mt-[296px] px-20 py-24 max-lg:px-10 max-lg:py-16 max-lg:mt-20 max-md:max-w-full max-md:px-5 max-md:py-12 max-md:mt-10">
-        <div className="flex w-[1200px] max-w-full flex-col items-center">
-          <h2 className="text-[rgba(255,215,0,1)] text-5xl font-bold leading-[1.4] text-center max-lg:text-4xl max-md:text-[28px]">
+      {/* Seção DESPERTAR */}
+      <section className="bg-black self-stretch flex w-full flex-col items-center justify-center mt-16 sm:mt-20 md:mt-24 lg:mt-32 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-16 sm:py-20 md:py-24">
+        <div className="flex w-full max-w-[1200px] flex-col items-center">
+          <h2 className="text-[rgba(255,215,0,1)] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.4] text-center">
             Cada letra é um passo. Cada passo é um despertar.
           </h2>
-          <p className="text-[rgba(200,200,200,1)] text-[21px] font-normal text-center mt-6 max-lg:text-[19px] max-lg:mt-4 max-md:text-[18px] max-md:mt-4">
+          <p className="text-[rgba(200,200,200,1)] text-base sm:text-lg md:text-xl font-normal text-center mt-4 sm:mt-6">
             Descubra o significado profundo por trás da jornada que vai transformar sua vida.
           </p>
           
-          <div className="w-full mt-16 max-lg:mt-12 max-md:mt-10">
-            <div className="grid grid-cols-3 gap-8 max-lg:grid-cols-2 max-lg:gap-6 max-md:grid-cols-1 max-md:gap-5">
+          <div className="w-full mt-10 sm:mt-12 md:mt-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
               
-              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-8 rounded-lg max-lg:p-6 max-md:p-5">
-                <div className="text-[rgba(255,215,0,1)] text-6xl font-bold mb-4 max-lg:text-5xl max-md:text-4xl">D</div>
-                <h3 className="text-white text-2xl font-bold mb-3 max-lg:text-xl max-md:text-lg">Decisão</h3>
-                <p className="text-[rgba(200,200,200,1)] text-lg leading-relaxed max-lg:text-base max-md:text-sm">
+              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-5 sm:p-6 md:p-8 rounded-lg">
+                <div className="text-[rgba(255,215,0,1)] text-4xl sm:text-5xl md:text-6xl font-bold mb-3 sm:mb-4">D</div>
+                <h3 className="text-white text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3">Decisão</h3>
+                <p className="text-[rgba(200,200,200,1)] text-sm sm:text-base md:text-lg leading-relaxed">
                   Tudo muda quando você decide. É o início da sua virada.
                 </p>
               </div>
               
-              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-8 rounded-lg max-lg:p-6 max-md:p-5">
-                <div className="text-[rgba(255,215,0,1)] text-6xl font-bold mb-4 max-lg:text-5xl max-md:text-4xl">E</div>
-                <h3 className="text-white text-2xl font-bold mb-3 max-lg:text-xl max-md:text-lg">Essência</h3>
-                <p className="text-[rgba(200,200,200,1)] text-lg leading-relaxed max-lg:text-base max-md:text-sm">
+              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-5 sm:p-6 md:p-8 rounded-lg">
+                <div className="text-[rgba(255,215,0,1)] text-4xl sm:text-5xl md:text-6xl font-bold mb-3 sm:mb-4">E</div>
+                <h3 className="text-white text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3">Essência</h3>
+                <p className="text-[rgba(200,200,200,1)] text-sm sm:text-base md:text-lg leading-relaxed">
                   Voltar pra quem você é de verdade. Sem máscaras, sem culpa.
                 </p>
               </div>
               
-              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-8 rounded-lg max-lg:p-6 max-md:p-5">
-                <div className="text-[rgba(255,215,0,1)] text-6xl font-bold mb-4 max-lg:text-5xl max-md:text-4xl">S</div>
-                <h3 className="text-white text-2xl font-bold mb-3 max-lg:text-xl max-md:text-lg">Sabedoria</h3>
-                <p className="text-[rgba(200,200,200,1)] text-lg leading-relaxed max-lg:text-base max-md:text-sm">
+              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-5 sm:p-6 md:p-8 rounded-lg">
+                <div className="text-[rgba(255,215,0,1)] text-4xl sm:text-5xl md:text-6xl font-bold mb-3 sm:mb-4">S</div>
+                <h3 className="text-white text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3">Sabedoria</h3>
+                <p className="text-[rgba(200,200,200,1)] text-sm sm:text-base md:text-lg leading-relaxed">
                   Escolher com consciência e maturidade o que te expande.
                 </p>
               </div>
               
-              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-8 rounded-lg max-lg:p-6 max-md:p-5">
-                <div className="text-[rgba(255,215,0,1)] text-6xl font-bold mb-4 max-lg:text-5xl max-md:text-4xl">P</div>
-                <h3 className="text-white text-2xl font-bold mb-3 max-lg:text-xl max-md:text-lg">Propósito</h3>
-                <p className="text-[rgba(200,200,200,1)] text-lg leading-relaxed max-lg:text-base max-md:text-sm">
+              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-5 sm:p-6 md:p-8 rounded-lg">
+                <div className="text-[rgba(255,215,0,1)] text-4xl sm:text-5xl md:text-6xl font-bold mb-3 sm:mb-4">P</div>
+                <h3 className="text-white text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3">Propósito</h3>
+                <p className="text-[rgba(200,200,200,1)] text-sm sm:text-base md:text-lg leading-relaxed">
                   Viver com sentido, sabendo exatamente o porquê do que faz.
                 </p>
               </div>
               
-              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-8 rounded-lg max-lg:p-6 max-md:p-5">
-                <div className="text-[rgba(255,215,0,1)] text-6xl font-bold mb-4 max-lg:text-5xl max-md:text-4xl">E</div>
-                <h3 className="text-white text-2xl font-bold mb-3 max-lg:text-xl max-md:text-lg">Espiritualidade</h3>
-                <p className="text-[rgba(200,200,200,1)] text-lg leading-relaxed max-lg:text-base max-md:text-sm">
+              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-5 sm:p-6 md:p-8 rounded-lg">
+                <div className="text-[rgba(255,215,0,1)] text-4xl sm:text-5xl md:text-6xl font-bold mb-3 sm:mb-4">E</div>
+                <h3 className="text-white text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3">Espiritualidade</h3>
+                <p className="text-[rgba(200,200,200,1)] text-sm sm:text-base md:text-lg leading-relaxed">
                   Reconectar com a força que te criou e te sustenta.
                 </p>
               </div>
               
-              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-8 rounded-lg max-lg:p-6 max-md:p-5">
-                <div className="text-[rgba(255,215,0,1)] text-6xl font-bold mb-4 max-lg:text-5xl max-md:text-4xl">R</div>
-                <h3 className="text-white text-2xl font-bold mb-3 max-lg:text-xl max-md:text-lg">Resiliência</h3>
-                <p className="text-[rgba(200,200,200,1)] text-lg leading-relaxed max-lg:text-base max-md:text-sm">
+              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-5 sm:p-6 md:p-8 rounded-lg">
+                <div className="text-[rgba(255,215,0,1)] text-4xl sm:text-5xl md:text-6xl font-bold mb-3 sm:mb-4">R</div>
+                <h3 className="text-white text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3">Resiliência</h3>
+                <p className="text-[rgba(200,200,200,1)] text-sm sm:text-base md:text-lg leading-relaxed">
                   Levantar mesmo quando a vida tenta te calar.
                 </p>
               </div>
               
-              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-8 rounded-lg max-lg:p-6 max-md:p-5">
-                <div className="text-[rgba(255,215,0,1)] text-6xl font-bold mb-4 max-lg:text-5xl max-md:text-4xl">T</div>
-                <h3 className="text-white text-2xl font-bold mb-3 max-lg:text-xl max-md:text-lg">Transbordo</h3>
-                <p className="text-[rgba(200,200,200,1)] text-lg leading-relaxed max-lg:text-base max-md:text-sm">
+              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-5 sm:p-6 md:p-8 rounded-lg">
+                <div className="text-[rgba(255,215,0,1)] text-4xl sm:text-5xl md:text-6xl font-bold mb-3 sm:mb-4">T</div>
+                <h3 className="text-white text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3">Transbordo</h3>
+                <p className="text-[rgba(200,200,200,1)] text-sm sm:text-base md:text-lg leading-relaxed">
                   Compartilhar sua luz com o mundo — sem medo de brilhar.
                 </p>
               </div>
               
-              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-8 rounded-lg max-lg:p-6 max-md:p-5">
-                <div className="text-[rgba(255,215,0,1)] text-6xl font-bold mb-4 max-lg:text-5xl max-md:text-4xl">A</div>
-                <h3 className="text-white text-2xl font-bold mb-3 max-lg:text-xl max-md:text-lg">Amor</h3>
-                <p className="text-[rgba(200,200,200,1)] text-lg leading-relaxed max-lg:text-base max-md:text-sm">
+              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-5 sm:p-6 md:p-8 rounded-lg">
+                <div className="text-[rgba(255,215,0,1)] text-4xl sm:text-5xl md:text-6xl font-bold mb-3 sm:mb-4">A</div>
+                <h3 className="text-white text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3">Amor</h3>
+                <p className="text-[rgba(200,200,200,1)] text-sm sm:text-base md:text-lg leading-relaxed">
                   Curar com amor, escolher com amor, viver com amor.
                 </p>
               </div>
               
-              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-8 rounded-lg max-lg:p-6 max-md:p-5 max-lg:col-span-2 max-lg:mx-auto max-lg:max-w-md max-md:col-span-1">
-                <div className="text-[rgba(255,215,0,1)] text-6xl font-bold mb-4 max-lg:text-5xl max-md:text-4xl">R</div>
-                <h3 className="text-white text-2xl font-bold mb-3 max-lg:text-xl max-md:text-lg">Realização</h3>
-                <p className="text-[rgba(200,200,200,1)] text-lg leading-relaxed max-lg:text-base max-md:text-sm">
+              <div className="bg-[rgba(20,20,20,1)] border border-[rgba(255,215,0,0.3)] flex flex-col items-center text-center p-5 sm:p-6 md:p-8 rounded-lg sm:col-span-2 lg:col-span-1 sm:mx-auto sm:max-w-md lg:mx-0 lg:max-w-none">
+                <div className="text-[rgba(255,215,0,1)] text-4xl sm:text-5xl md:text-6xl font-bold mb-3 sm:mb-4">R</div>
+                <h3 className="text-white text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3">Realização</h3>
+                <p className="text-[rgba(200,200,200,1)] text-sm sm:text-base md:text-lg leading-relaxed">
                   Materializar seus sonhos com leveza e presença.
                 </p>
               </div>
@@ -178,8 +126,8 @@ export const FeaturesSection: React.FC = () => {
             </div>
           </div>
           
-          <div className="mt-16 max-lg:mt-12 max-md:mt-10">
-            <CTAButton className="w-[520px] max-w-full max-lg:max-w-[400px] max-md:max-w-[300px] max-sm:max-w-[280px]">
+          <div className="mt-10 sm:mt-12 md:mt-16">
+            <CTAButton className="w-full max-w-[280px] sm:max-w-[350px] md:max-w-[450px] lg:max-w-[520px]">
               QUERO VIVER MEU DESPERTAR
             </CTAButton>
           </div>
