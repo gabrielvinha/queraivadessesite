@@ -6,7 +6,7 @@ export const HeroSection: React.FC = () => {
     <section className="flex flex-col self-stretch relative min-h-screen w-full justify-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-8 sm:py-12 md:py-16 lg:py-20 overflow-hidden">
       {/* Imagem de fundo */}
       <img
-        src="https://i.postimg.cc/PqMv276C/O-Brasil-est-entrando-em-colapso-e-quem-n-o-fizer-parte-da-nova-alian-a-vai-ser-engolido-N-o-somos.png"
+        src="https://i.postimg.cc/PJfdp4pg/O-Brasil-est-entrando-em-colapso-e-quem-n-o-fizer-parte-da-nova-alian-a-vai-ser-engolido-N-o-somos.png"
         className="absolute h-full w-full object-cover inset-0 hidden md:block"
         alt="Background"
       />
