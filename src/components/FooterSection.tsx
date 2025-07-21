@@ -44,7 +44,7 @@ export const FooterSection: React.FC = () => {
             <span className="font-normal">CNPJ: 37676810/0001-72</span>
           </div>
           <img
-            src=""
+            src="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/f0983e7be6c251ba6effd251b74f6c450ada9401?placeholderIfAbsent=true" 
             className="aspect-[0.94] object-contain w-16 sm:w-20 md:w-24 lg:w-28 shrink-0 max-w-full order-1 md:order-2"
             alt="QR Code"
           />
