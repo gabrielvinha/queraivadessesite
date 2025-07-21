@@ -2,7 +2,7 @@ import React from 'react';
 
 export const GuaranteeSection: React.FC = () => {
   return (
-    <section className="flex flex-col items-center px-4 sm:px-6 md:px-80">
+    <section className="flex flex-col items-center px-4 sm:px-60 md:px-80">
       <img
         src="https://i.postimg.cc/C5h57p55/a58cfaf5-e5d1-4568-ba32-f067a979dc7b.png" 
         className="aspect-[1.25] object-contain w-50 sm:w-123 md:w-40 lg:w-48 max-w-full mt-2.5"
