@@ -3,29 +3,57 @@ import { CTAButton } from './CTAButton';
 
 export const HeroSection: React.FC = () => {
   return (
-    <section className="flex flex-col self-stretch relative min-h-[950px] w-full font-bold pt-[82px] pb-[181px] px-20 max-lg:px-10 max-md:min-h-[700px] max-md:pt-10 max-md:pb-[100px] max-md:px-5 max-sm:px-4">
-      <img
-        src="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/fd0eedbb4566fe3f4e02bfb7b7ce763198cea270?placeholderIfAbsent=true"
-        className="absolute h-full w-full object-cover inset-0"
-        alt="Background"
-      />
-      <div className="relative flex w-[537px] max-w-full flex-col items-stretch -mb-9 max-lg:w-full max-md:mb-2.5 max-md:w-full">
-        <img
-          src="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/944423aebc5c667095405fc555736cdafd323eec?placeholderIfAbsent=true"
-          className="aspect-[0.8] object-contain w-[194px] max-w-full ml-4 rounded-[605px] max-lg:w-[150px] max-lg:self-center max-lg:ml-0 max-md:ml-2.5 max-md:w-[120px] max-md:self-center max-md:ml-0"
-          alt="Profile"
-        />
-        <h1 className="text-white text-5xl leading-[53px] max-lg:text-4xl max-lg:leading-[45px] max-lg:text-center max-md:max-w-full max-md:text-[28px] max-md:leading-[35px] max-md:text-center">
-          Mentoria O Despertar da Vida
-        </h1>
-        <p className="text-[21px] leading-8 mt-[21px] max-lg:text-center max-md:max-w-full max-md:mr-0.5 max-md:text-[18px] max-md:leading-7 max-md:text-center max-md:mt-5">
-          Transforme sua essência, seus negócios e sua prosperidade.
-        </p>
-        <div className="mt-[54px] max-lg:flex max-lg:justify-center max-md:mt-8 max-md:flex max-md:justify-center">
-          <CTAButton className="w-full max-w-[420px] max-lg:max-w-[380px] max-md:max-w-[340px] max-sm:max-w-[280px]">
-            QUERO DESPERTAR MINHA VIDA
-          </CTAButton>
+    <section className="flex flex-col self-stretch relative min-h-screen w-full justify-center px-20 py-20 max-lg:px-10 max-lg:py-16 max-md:px-5 max-md:py-12 overflow-hidden">
+      {/* Fundo escuro com elementos gráficos sutis */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0A0A0A] via-[#1A1A1A] to-[#0F0F0F]"></div>
+      
+      {/* Elementos decorativos dourados */}
+      <div className="absolute top-20 right-20 w-32 h-32 rounded-full border border-[rgba(248,226,154,0.2)] opacity-60 max-lg:w-24 max-lg:h-24 max-lg:top-16 max-lg:right-16 max-md:w-16 max-md:h-16 max-md:top-10 max-md:right-10"></div>
+      <div className="absolute bottom-32 left-16 w-24 h-24 rounded-full border border-[rgba(248,226,154,0.15)] opacity-40 max-lg:w-20 max-lg:h-20 max-lg:bottom-24 max-lg:left-12 max-md:w-12 max-md:h-12 max-md:bottom-16 max-md:left-8"></div>
+      <div className="absolute top-1/2 right-1/3 w-2 h-2 bg-[rgba(248,226,154,0.6)] rounded-full animate-pulse max-md:hidden"></div>
+      <div className="absolute top-1/3 left-1/4 w-1 h-1 bg-[rgba(248,226,154,0.4)] rounded-full animate-pulse max-md:hidden"></div>
+      
+      {/* Conteúdo principal */}
+      <div className="relative flex w-full max-w-[1200px] mx-auto flex-col items-start max-lg:items-center max-md:items-center">
+        {/* Selo no topo */}
+        <div className="text-[rgba(255,255,255,0.7)] text-[20px] font-medium mb-8 max-lg:text-center max-lg:text-[18px] max-md:text-center max-md:text-[16px] max-md:mb-6" style={{ fontFamily: 'Poppins, sans-serif' }}>
+          Mentoria Exclusiva para Mulheres que Querem Prosperar com Propósito
         </div>
+        
+        {/* Título principal */}
+        <h1 
+          className="text-[#F8E29A] text-[48px] font-extrabold leading-[1.2] mb-6 max-lg:text-center max-lg:text-[40px] max-md:text-center max-md:text-[32px] max-md:mb-4"
+          style={{ 
+            fontFamily: 'Montserrat, sans-serif',
+            letterSpacing: '-0.5px',
+            maxWidth: '100%'
+          }}
+        >
+          O Despertar da Vida
+        </h1>
+        
+        {/* Subheadline */}
+        <p 
+          className="text-[rgba(255,255,255,0.7)] text-[20px] font-medium leading-[1.5] mb-10 max-w-[60%] max-lg:text-center max-lg:max-w-[80%] max-lg:text-[18px] max-md:text-center max-md:max-w-[100%] max-md:text-[16px] max-md:mb-8"
+          style={{ fontFamily: 'Poppins, sans-serif' }}
+        >
+          Transforme sua essência, destrave seus bloqueios e construa uma vida próspera em todas as áreas.
+        </p>
+        
+        {/* Botão principal */}
+        <button 
+          className="bg-[#F8E29A] text-[#1A1A1A] font-semibold text-[18px] px-10 py-5 rounded-[40px] flex items-center gap-3 hover:bg-[#F5D982] transition-all duration-300 hover:scale-105 max-lg:text-[16px] max-lg:px-8 max-lg:py-4 max-md:text-[14px] max-md:px-6 max-md:py-3"
+          style={{ fontFamily: 'Montserrat, sans-serif' }}
+          onClick={() => {
+            const phoneNumber = "5519993401563";
+            const message = "Olá, eu vi sua página e quero saber mais sobre O Despertar da Vida!";
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+          }}
+        >
+          QUERO VIVER ESSA TRANSFORMAÇÃO
+          <span className="text-[14px] max-md:text-[12px]">↗</span>
+        </button>
       </div>
     </section>
   );
