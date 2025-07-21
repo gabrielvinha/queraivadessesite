@@ -19,10 +19,22 @@ export const CTAButton: React.FC<CTAButtonProps> = ({
     ? "bg-[rgba(39,253,1,1)] border text-black border-[rgba(103,166,1,1)] hover:bg-[rgba(35,230,1,1)]"
     : "border text-white border-white hover:bg-white hover:text-black";
 
+  const handleClick = () => {
+    if (onClick) {
+      onClick();
+    } else {
+      // Default action: open WhatsApp
+      const phoneNumber = "5519993401563";
+      const message = "Olá, eu vi sua página e quero saber mais!";
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+    }
+  };
+
   return (
     <button 
       className={`${baseClasses} ${variantClasses} ${className}`}
-      onClick={onClick}
+      onClick={handleClick}
     >
       <div className="z-10 grow shrink basis-auto my-auto px-8 py-5 max-md:px-6 max-md:py-4">
         {children}

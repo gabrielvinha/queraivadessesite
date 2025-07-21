@@ -35,14 +35,14 @@ export const PricingSection: React.FC = () => {
           <div className="w-6/12 max-md:w-full max-md:ml-0">
             <BonusItem
               image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/0c19054bd118f6643aaf5b541bf5c978e83426da?placeholderIfAbsent=true"
-              title="CDR"
+              title="Sessões com Psicóloga Convidada"
               price="R$2.997,00"
             />
           </div>
           <div className="w-6/12 ml-5 max-md:w-full max-md:ml-0">
             <BonusItem
               image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/9a62666d8007ab73dc072b5a2da5db9646b348a1?placeholderIfAbsent=true"
-              title="GESTÃO DO TEMPO E PRODUTIVIDADE"
+              title="Mentorias em grupo + PDF bônus"
               price="R$997,00"
             />
           </div>
@@ -59,14 +59,14 @@ export const PricingSection: React.FC = () => {
                 alt=""
               />
               <div className="ml-[43px] mt-[31px] max-md:ml-0 max-md:mt-4 max-md:text-[18px]">
-                WORKSHOP TRANSIÇÃO DE CARREIRA
+                Aula de Tráfego Pago (bônus)
               </div>
             </div>
           </div>
           <div className="w-6/12 ml-5 max-md:w-full max-md:ml-0">
             <BonusItem
               image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/23e8b6ae03262ce29629b1099d90d2a7d9458141?placeholderIfAbsent=true"
-              title="NETWORKING PRO"
+              title="Grupo VIP no WhatsApp"
               price="R$997,00"
             />
           </div>
@@ -81,7 +81,7 @@ export const PricingSection: React.FC = () => {
         />
         <div className="flex items-stretch gap-px mt-[27px] justify-center max-md:flex-col max-md:gap-2 max-md:mt-4">
           <div className="text-[21px] leading-[1.4] max-md:text-[18px]">
-            VISITA PRESENCIAL
+            Acesso vitalício ao material
           </div>
           <div className="text-[25px] leading-none line-through max-md:text-[20px]">
             R$ INCALCULÁVEL
@@ -111,7 +111,7 @@ export const PricingSection: React.FC = () => {
           <div className="border self-stretch flex w-full flex-col items-center justify-center mt-3 px-16 py-[19px] rounded-[173px] border-[rgba(49,49,49,0.42)] border-solid max-md:max-w-full max-md:px-4 max-md:py-3">
             <div className="flex w-[262px] max-w-full items-stretch gap-[3px] max-md:flex-col max-md:gap-1">
               <div className="text-[rgba(196,196,196,1)] text-base font-normal leading-none grow max-md:text-[14px]">
-                AR - Aliança Reinante
+                Mentoria O Despertar da Vida
               </div>
               <div className="text-[rgba(255,205,138,1)] text-lg font-bold leading-none grow shrink w-[83px] max-md:text-[16px]">
                 | R$ 3.497,00
@@ -144,7 +144,7 @@ export const PricingSection: React.FC = () => {
           
           <div className="mt-[27px] max-md:mt-6">
             <CTAButton className="w-[420px] max-w-full max-md:max-w-[300px]">
-              QUERO SER PARTE DA ALIANÇA
+              QUERO FALAR COM A MENTORA
             </CTAButton>
           </div>
         </div>

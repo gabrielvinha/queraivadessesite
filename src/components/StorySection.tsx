@@ -16,38 +16,22 @@ export const StorySection: React.FC = () => {
           CAMINHAR SOZINHO
         </h2>
         <p className="text-[rgba(215,215,215,1)] leading-8 mt-[37px] max-md:max-w-full max-md:text-[18px] max-md:leading-7 max-md:mt-6 max-md:text-center">
-          Você passou tempo demais tentando acertar no escuro. Tentando
+          Você tentou sozinha.
           <br className="max-md:hidden" />
-          <span className="max-md:inline"> </span>sozinho. Carregando tudo nas costas.
+          <span className="max-md:inline"> </span>Tentou calar o chamado.
         </p>
         <p className="text-[rgba(215,215,215,1)] mt-[43px] max-md:max-w-full max-md:mt-6 max-md:text-[18px] max-md:text-center">
-          Chegou a hora de fazer parte de algo MAIOR.
+          Tentou fazer dar certo com a força do braço — mas agora percebe que precisa de mais.
         </p>
         <p className="text-[rgba(215,215,215,1)] leading-8 mr-[53px] mt-[42px] max-md:max-w-full max-md:mr-0 max-md:mt-6 max-md:text-[18px] max-md:leading-7 max-md:text-center">
-          A Aliança Reinante é mais que um ecossistema digital.
-          <br />É um lar pra quem nunca teve lugar.
-          <br />É a base dos que foram desacreditados — mas se recusam a<br className="max-md:hidden" />
-          <span className="max-md:inline"> </span>ser apagados.
-        </p>
-        <p className="text-[rgba(215,215,215,1)] mr-[23px] mt-[39px] max-md:max-w-full max-md:mr-0 max-md:mt-6 max-md:text-[18px] max-md:text-center">
-          Não é só sobre ganhar dinheiro. É sobre não lutar mais sozinho.
-        </p>
-        <p className="font-bold leading-8 mt-[38px] max-md:max-w-full max-md:mt-6 max-md:text-[18px] max-md:leading-7 max-md:text-center">
-          É sobre entrar para uma aliança que vai te impulsionar em
-          <br className="max-md:hidden" />
-          <span className="max-md:inline"> </span>todas as áreas da vida.
-        </p>
-        <p className="text-[rgba(215,215,215,1)] mt-12 max-md:max-w-full max-md:mt-6 max-md:text-[18px] max-md:text-center">
-          Espiritual, mental, financeira, emocional, familiar...
-        </p>
-        <p className="text-[rgba(215,215,215,1)] leading-8 mr-[50px] mt-[42px] max-md:max-w-full max-md:mr-0 max-md:mt-6 max-md:text-[18px] max-md:leading-7 max-md:text-center">
-          Um movimento dos improváveis que não se dobram — e não
-          <br className="max-md:hidden" />
-          <span className="max-md:inline"> </span>andam mais sozinhos.
+          Essa mentoria é mais do que um curso.
+          <br />É um reencontro.
+          <br />É um caminho estruturado pra você se libertar do que te trava e ativar tudo que já está em você.<br className="max-md:hidden" />
+          <span className="max-md:inline"> </span>Com acolhimento, clareza, fé e técnica.
         </p>
         <div className="mt-[30px] max-md:mt-6">
           <CTAButton className="w-full max-md:max-w-[300px] max-md:mx-auto">
-            QUERO SER PARTE DA ALIANÇA
+            EU QUERO DESPERTAR
           </CTAButton>
         </div>
       </article>

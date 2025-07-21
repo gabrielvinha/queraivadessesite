@@ -16,39 +16,14 @@ export const HeroSection: React.FC = () => {
           alt="Profile"
         />
         <h1 className="text-white text-5xl leading-[53px] max-md:max-w-full max-md:text-[28px] max-md:leading-[35px] max-md:text-center">
-          O Brasil está entrando
-          <br className="max-md:hidden" />
-          <span className="max-md:inline"> </span>em colapso, e quem não
-          <br className="max-md:hidden" />
-          <span className="max-md:inline"> </span>fizer parte da nova
-          <br className="max-md:hidden" />
-          <span className="max-md:inline"> </span>aliança vai ser engolido
+          Mentoria O Despertar da Vida
         </h1>
         <p className="text-[21px] leading-8 mt-[21px] max-md:max-w-full max-md:mr-0.5 max-md:text-[18px] max-md:leading-7 max-md:text-center max-md:mt-5">
-          Não somos poucos, só estávamos separados…
-          <span className="font-normal text-[rgba(198,198,198,1)]">
-            {" "}
-            Gente
-          </span>
-          <br />
-          <span className="font-normal text-[rgba(198,198,198,1)]">
-            como você, com fome de mudança. Mentores que já
-          </span>
-          <br />
-          <span className="font-normal text-[rgba(198,198,198,1)]">
-            chegaram onde você quer chegar. E uma tropa que te
-          </span>
-          <br />
-          <span className="font-normal text-[rgba(198,198,198,1)]">
-            levanta quando o mundo tenta te derrubar.{" "}
-          </span>
-          Na Aliança,
-          <br />
-          você nunca mais anda sozinho.
+          Transforme sua essência, seus negócios e sua prosperidade.
         </p>
         <div className="mt-[54px] max-md:mt-8 max-md:flex max-md:justify-center">
           <CTAButton className="w-full max-w-[420px] max-md:max-w-[340px]">
-            QUERO SER PARTE DA ALIANÇA
+            QUERO DESPERTAR MINHA VIDA
           </CTAButton>
         </div>
       </div>

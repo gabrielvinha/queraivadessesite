@@ -12,15 +12,13 @@ export const GuaranteeSection: React.FC = () => {
         Garantia incondicional de 15 dias
       </h2>
       <p className="text-[rgba(223,223,223,1)] text-[21px] font-normal text-center ml-3.5 mt-10 max-md:max-w-full max-md:text-[18px] max-md:ml-0 max-md:mt-6 max-md:px-4">
-        Se em 15 dias você sentir que não é pra você, te devolvemos 100% do valor. Sem
+        Você tem 15 dias de garantia incondicional.
       </p>
       <p className="text-[rgba(223,223,223,1)] text-[21px] font-normal leading-8 text-center mt-2.5 max-md:max-w-full max-md:text-[18px] max-md:leading-7 max-md:px-4">
-        letra miúda. Sem questionamento.{" "}
+        Se por qualquer motivo sentir que não é o seu momento, devolvemos 100% do valor sem questionamentos.{" "}
         <span className="font-bold">
-          Você entra com confiança. E se não sentir
+          Você entra com confiança — e decide com liberdade.
         </span>
-        <br className="max-md:hidden" />
-        <span className="max-md:inline"> </span><span className="font-bold">que é pra você — sai sem prejuízo</span>
       </p>
     </section>
   );

@@ -45,22 +45,22 @@ export const FeaturesSection: React.FC = () => {
           <div className="w-[33%] max-md:w-full max-md:ml-0">
             <FeatureCard
               image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/ebddcf85d8f1e5c5fca93426ac5d6aaec3f9c32d?placeholderIfAbsent=true"
-              title="Marco Zero"
-              description="Sua primeira vitória: BOOTCAMP DE MONETIZAÇÃO IMEDIATA Recupere seu investimento no primeiro mês."
+              title="Espiritualidade e Despertar Feminino"
+              description="Reconecte com sua essência feminina sagrada e desperte a força interior que sempre esteve em você."
             />
           </div>
           <div className="w-[33%] ml-5 max-md:w-full max-md:ml-0">
             <FeatureCard
               image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/1da997adaebafe9c09071932158db018fb87d5ef?placeholderIfAbsent=true"
-              title="Mentorias de ajuste de rota"
-              description="Mentorias Semanais com Marçal, Aguiari e convidados especiais do ecossistema. Vamos convidar mentores conhecidos de todas as áreas para dentro da Aliança."
+              title="Psicologia da Autossabotagem"
+              description="Identifique e quebre os padrões inconscientes que sabotam seu crescimento e impedem sua evolução."
             />
           </div>
           <div className="w-[33%] ml-5 max-md:w-full max-md:ml-0">
             <FeatureCard
               image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/d53263506c0d0e7c2e5f345ec3f5e9d3843a8ceb?placeholderIfAbsent=true"
-              title="Experiências, acessos e Networking"
-              description='Quatro vezes por ano, vamos sair do digital. Pra olhar no olho. Pra trocar energia. Pra viver experiências que transformam. Esses encontros não são "eventos". São experiências, pontos de ruptura de ciclo.'
+              title="Comunicação Autêntica e Oratória"
+              description="Desenvolva sua voz única, comunique com clareza e impacto, e se torne uma líder inspiradora em sua área."
             />
           </div>
         </div>
@@ -71,22 +71,22 @@ export const FeaturesSection: React.FC = () => {
           <div className="w-[33%] max-md:w-full max-md:ml-0">
             <FeatureCard
               image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/e2f018d1c1e10e146cc0898c7e0f5b9b5bea1009?placeholderIfAbsent=true"
-              title="Grupos de Transbordo"
-              description="O que você aprende, você compartilha. E ao transbordar em outros, você se fortalece ainda mais. Grupos formados por Reinantes com o mesmo ritmo, visão e sede de crescer — onde um puxa o outro pra cima, e o conhecimento vira COLHEITA COLETIVA."
+              title="Consciência Financeira e Mentalidade"
+              description="Transforme sua relação com o dinheiro, desenvolva mentalidade de abundância e crie estratégias sustentáveis de prosperidade."
             />
           </div>
           <div className="w-[33%] ml-5 max-md:w-full max-md:ml-0">
             <FeatureCard
               image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/6691f023ea5b3612fee51f141f5a7ce1c6bee275?placeholderIfAbsent=true"
-              title="Oficinas de Implementação"
-              description="Seu conhecimento em prática. Aqui você não fica na teoria, nós vamos fazer as oficinas para aplicar junto com você."
+              title="Vendas com Propósito"
+              description="Aprenda a vender de forma autêntica e alinhada com seus valores, sem manipulação ou pressão."
             />
           </div>
           <div className="w-[33%] ml-5 max-md:w-full max-md:ml-0">
             <FeatureCard
               image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/a50c962438b611a410a253f4e8e8015a7592caf4?placeholderIfAbsent=true"
-              title="Agentes de IA"
-              description="Agente de IA para cada trilha, te ajudando em cada uma das etapas. As mentes do Marçal e Aguiari na palma da sua mão."
+              title="Visibilidade Online com Estratégia"
+              description="Construa uma presença digital autêntica e estratégica que atraia seu público ideal e gere resultados consistentes."
             />
           </div>
         </div>
@@ -122,7 +122,7 @@ export const FeaturesSection: React.FC = () => {
 
       <div className="mt-[30px] max-md:mt-8 max-md:flex max-md:justify-center max-md:px-4">
         <CTAButton variant="secondary" className="w-[472px] max-w-full max-md:max-w-[300px]">
-          QUERO PROSPERAR EM TODAS ÁS ÁREAS
+          QUERO FALAR COM A MENTORA
         </CTAButton>
       </div>
     </section>
