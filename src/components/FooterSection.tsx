@@ -50,10 +50,7 @@ export const FooterSection: React.FC = () => {
       </section>
 
       <div className="border self-stretch flex w-full flex-col text-sm sm:text-base text-white font-bold text-center leading-6 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-6 sm:py-8 border-[rgba(51,51,51,1)] border-solid">
-        <img
-          src="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/9c462c7725cf790d0fb7902bf22e3977a1057fda?placeholderIfAbsent=true"
-          className="aspect-[3.77] object-contain w-24 sm:w-32 md:w-40 lg:w-44 self-center max-w-full"
-          alt="Logo"
+       
         />
         <div className="flex w-full max-w-[1052px] items-stretch gap-5 flex-col md:flex-row justify-between items-center mt-4 sm:mt-6">
           <div className="mt-4 sm:mt-8 md:mt-12 text-xs sm:text-sm order-2 md:order-1">
