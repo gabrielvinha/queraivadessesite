@@ -94,7 +94,8 @@ export const PricingSection: React.FC = () => {
         style={{
           backgroundImage: 'url(https://i.pinimg.com/originals/44/6e/3b/446e3b79395a287ca32f7977dd83b290.jpg)',
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: 'center center',
+          backgroundAttachment: 'scroll',
           backgroundRepeat: 'no-repeat'
         }}
       >
