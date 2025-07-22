@@ -51,21 +51,6 @@ export const FooterSection: React.FC = () => {
 
       <div className="border self-stretch flex w-full flex-col text-sm sm:text-base text-white font-bold text-center leading-6 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-6 sm:py-8 border-[rgba(51,51,51,1)] border-solid">
        
-        />
-        <div className="flex w-full max-w-[1052px] items-stretch gap-5 flex-col md:flex-row justify-between items-center mt-4 sm:mt-6">
-          <div className="mt-4 sm:mt-8 md:mt-12 text-xs sm:text-sm order-2 md:order-1">
-            <strong>Pablo Marçal 2025</strong>
-            <span className="font-normal">
-              {" "}
-              | Todos os direitos reservados
-            </span>
-            <br />
-            <span className="font-normal">CNPJ: 37676810/0001-72</span>
-          </div>
-          
-          />
-        </div>
-      </div>
-    </footer>
+        
   );
 };
