@@ -92,8 +92,8 @@ export const PricingSection: React.FC = () => {
       <div 
         className="self-stretch flex w-full flex-col items-center text-center justify-center mt-10 sm:mt-12 md:mt-16 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-12 sm:py-16 md:py-20 lg:py-24 relative overflow-hidden"
         style={{
-          backgroundImage: 'url(https://i.postimg.cc/CL5DfGVp/O-Brasil-est-entrando-em-colapso-e-quem-n-o-fizer-parte-da-nova-alian-a-vai-ser-engolido-N-o-somos.png)',
-          backgroundSize: 'cover',
+          backgroundImage: 'url(https://i.pinimg.com/originals/44/6e/3b/446e3b79395a287ca32f7977dd83b290.jpg)',
+          backgroundSize: 'cover', 
           backgroundPosition: 'center center',
           backgroundAttachment: 'scroll',
           backgroundRepeat: 'no-repeat'
