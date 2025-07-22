@@ -1,5 +1,6 @@
 import React from 'react';
 import { HeroSection } from '@/components/HeroSection';
+import { CinematicBackgroundSection } from '@/components/CinematicBackgroundSection';
 import { ValuePropositionSection } from '@/components/ValuePropositionSection';
 import { StorySection } from '@/components/StorySection';
 import { CrisisTimelineSection } from '@/components/CrisisTimelineSection';
@@ -14,7 +15,8 @@ const Index = () => {
   return (
     <main className="bg-white flex flex-col min-h-screen w-full overflow-x-hidden" style={{ margin: 0, padding: 0 }}>
       <HeroSection />
-      <div className="w-full flex flex-col items-center">
+      <CinematicBackgroundSection />
+      <div className="content relative z-10 w-full flex flex-col items-center">
         <ValuePropositionSection />
         <StorySection />
         <CrisisTimelineSection />
