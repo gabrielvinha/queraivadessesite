@@ -3,7 +3,16 @@ import { CTAButton } from './CTAButton';
 
 export const HeroSection: React.FC = () => {
   return (
-    <section className="flex flex-col self-stretch relative min-h-screen w-full justify-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-8 sm:py-12 md:py-16 lg:py-20 overflow-hidden">
+    <section 
+      className="flex flex-col self-stretch relative min-h-screen w-full justify-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-8 sm:py-12 md:py-16 lg:py-20 overflow-hidden"
+      style={{
+        backgroundImage: 'url(https://i.postimg.cc/cCTwwXDw/O-Brasil-est-entrando-em-colapso-e-quem-n-o-fizer-parte-da-nova-alian-a-vai-ser-engolido-N-o-somos.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed'
+      }}
+    >
       {/* Fireflies CSS Styles */}
       <style jsx>{`
         .firefly {
@@ -165,20 +174,6 @@ export const HeroSection: React.FC = () => {
       <div className="firefly"></div>
       <div className="firefly"></div>
       <div className="firefly"></div>
-      
-      {/* Imagem de fundo */}
-      <img
-        src="https://i.postimg.cc/cCTwwXDw/O-Brasil-est-entrando-em-colapso-e-quem-n-o-fizer-parte-da-nova-alian-a-vai-ser-engolido-N-o-somos.png"
-        className="absolute h-full w-full object-cover inset-0 hidden md:block"
-        alt="Background"
-      />
-      
-      {/* Imagem de fundo para mobile */}
-      <img
-        src="https://i.postimg.cc/2S54x7Yx/O-Brasil-est-entrando-em-colapso-e-quem-n-o-fizer-parte-da-nova-alian-a-vai-ser-engolido-N-o-somos.png"
-        className="absolute h-full w-full object-cover inset-0 block md:hidden"
-        alt="Background Mobile"
-      />
       
       {/* Elementos decorativos dourados */}
       <div className="absolute top-12 sm:top-16 md:top-20 right-4 sm:right-8 md:right-16 lg:right-20 w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 lg:w-32 lg:h-32 rounded-full border border-[rgba(248,226,154,0.2)] opacity-60"></div>
