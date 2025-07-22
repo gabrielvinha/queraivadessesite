@@ -267,7 +267,7 @@ export const PricingSection: React.FC = () => {
         <div className="bg-[rgba(21,24,30,1)] border flex w-full max-w-[640px] flex-col items-center px-4 sm:px-6 md:px-8 py-2 sm:py-4 md:py-5 rounded-lg border-[rgba(255,228,191,1)] border-solid">
           <img
   src="https://i.postimg.cc/C5h57p55/a58cfaf5-e5d1-4568-ba32-f067a979dc7b.png"
-  className="aspect-[1.36] object-contain w-54 sm:w-68 md:w-82 lg:w-88 max-w-full mb-0"
+  className="aspect-[2.36] object-contain w-54 sm:w-68 md:w-82 lg:w-88 max-w-full mb-0"
 />
           
           <div className="border self-stretch flex w-full flex-col items-center justify-center mt-16 sm:mt-20 md:mt-24 lg:mt-32 px-4 sm:px-8 md:px-12 lg:px-16 py-3 sm:py-4 md:py-5 rounded-[173px] border-[rgba(49,49,49,0.42)] border-solid">
