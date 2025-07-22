@@ -4,13 +4,15 @@ import { CTAButton } from './CTAButton';
 export const HeroSection: React.FC = () => {
   return (
     <section 
-      className="flex flex-col self-stretch relative min-h-screen w-full justify-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-8 sm:py-12 md:py-16 lg:py-20 overflow-hidden"
+      className="flex flex-col relative min-h-screen w-screen justify-center overflow-hidden"
       style={{
         backgroundImage: 'url(https://i.postimg.cc/cCTwwXDw/O-Brasil-est-entrando-em-colapso-e-quem-n-o-fizer-parte-da-nova-alian-a-vai-ser-engolido-N-o-somos.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed'
+        backgroundAttachment: 'fixed',
+        margin: '0',
+        padding: '0'
       }}
     >
       {/* Fireflies CSS Styles */}
@@ -176,13 +178,13 @@ export const HeroSection: React.FC = () => {
       <div className="firefly"></div>
       
       {/* Elementos decorativos dourados */}
-      <div className="absolute top-12 sm:top-16 md:top-20 right-4 sm:right-8 md:right-16 lg:right-20 w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 lg:w-32 lg:h-32 rounded-full border border-[rgba(248,226,154,0.2)] opacity-60"></div>
-      <div className="absolute bottom-16 sm:bottom-20 md:bottom-24 lg:bottom-32 left-4 sm:left-8 md:left-12 lg:left-16 w-8 h-8 sm:w-12 sm:h-12 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full border border-[rgba(248,226,154,0.15)] opacity-40"></div>
+      <div className="absolute top-12 sm:top-16 md:top-20 right-8 sm:right-12 md:right-16 lg:right-20 w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 lg:w-32 lg:h-32 rounded-full border border-[rgba(248,226,154,0.2)] opacity-60"></div>
+      <div className="absolute bottom-16 sm:bottom-20 md:bottom-24 lg:bottom-32 left-8 sm:left-12 md:left-16 lg:left-20 w-8 h-8 sm:w-12 sm:h-12 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full border border-[rgba(248,226,154,0.15)] opacity-40"></div>
       <div className="absolute top-1/2 right-1/3 w-2 h-2 bg-[rgba(248,226,154,0.6)] rounded-full animate-pulse hidden md:block"></div>
       <div className="absolute top-1/3 left-1/4 w-1 h-1 bg-[rgba(248,226,154,0.4)] rounded-full animate-pulse hidden md:block"></div>
       
       {/* Conteúdo principal */}
-      <div className="relative flex w-full max-w-[1200px] mx-auto flex-col items-start md:items-start items-center text-center md:text-left">
+      <div className="relative flex w-full max-w-[1200px] mx-auto flex-col items-start md:items-start items-center text-center md:text-left px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-8 sm:py-12 md:py-16 lg:py-20">
         {/* Selo no topo */}
         <div className="text-[rgba(255,255,255,0.7)] text-sm sm:text-base md:text-lg lg:text-xl font-medium mb-4 sm:mb-6 md:mb-8" style={{ fontFamily: 'Poppins, sans-serif' }}>
           Mentoria Exclusiva para Mulheres que Querem Prosperar com Propósito

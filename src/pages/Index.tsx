@@ -12,17 +12,19 @@ import { FooterSection } from '@/components/FooterSection';
 
 const Index = () => {
   return (
-    <main className="bg-white flex flex-col items-center min-h-screen">
+    <main className="bg-white flex flex-col min-h-screen w-full overflow-x-hidden" style={{ margin: 0, padding: 0 }}>
       <HeroSection />
-      <ValuePropositionSection />
-      <StorySection />
-      <CrisisTimelineSection />
-      <PurposeSection />
-      <LifeAreasSection />
-      <FeaturesSection />
-      <PricingSection />
-      <GuaranteeSection />
-      <FooterSection />
+      <div className="w-full flex flex-col items-center">
+        <ValuePropositionSection />
+        <StorySection />
+        <CrisisTimelineSection />
+        <PurposeSection />
+        <LifeAreasSection />
+        <FeaturesSection />
+        <PricingSection />
+        <GuaranteeSection />
+        <FooterSection />
+      </div>
     </main>
   );
 };
