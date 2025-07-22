@@ -71,9 +71,11 @@ export const LifeAreasSection: React.FC = () => {
         <div>
           <div className="gap-5 flex flex-col md:flex-row items-center md:items-start">
             <div className="w-full md:w-[16%] flex justify-center md:justify-start">
-              <div className="flex w-20 sm:w-24 md:w-28 lg:w-32 xl:w-[143px] shrink-0 h-20 sm:h-24 md:h-28 lg:h-32 xl:h-[142px] items-center justify-center">
-                <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">💝</div>
-              </div>
+              <img
+                src="https://pablomarcal.com.br/wp-content/uploads/2025/07/emotions-1-1.svg"
+                className="aspect-[1.01] object-contain w-20 sm:w-24 md:w-28 lg:w-32 xl:w-[143px] shrink-0 max-w-full"
+                alt=""
+              />
             </div>
             <div className="w-full md:w-[84%] md:ml-5 mt-4 md:mt-0">
               <div className="flex flex-col self-stretch items-stretch">
@@ -101,9 +103,11 @@ export const LifeAreasSection: React.FC = () => {
       <div className="bg-[rgba(16,17,31,1)] border w-full max-w-[972px] mt-5 px-4 sm:px-6 md:px-8 lg:px-10 py-6 sm:py-8 md:py-10 rounded-[10px] border-[rgba(36,37,51,1)] border-solid mx-4">
         <div className="gap-5 flex flex-col md:flex-row items-center md:items-start text-center md:text-left">
           <div className="w-full md:w-[16%] flex justify-center md:justify-start">
-            <div className="flex w-20 sm:w-24 md:w-28 lg:w-32 xl:w-[143px] shrink-0 h-20 sm:h-24 md:h-28 lg:h-32 xl:h-[142px] items-center justify-center">
-              <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">👨‍👩‍👧‍👦</div> 
-            </div>
+            <img
+              src="https://pablomarcal.com.br/wp-content/uploads/2025/07/familia-1-1.svg"
+              className="aspect-[1.01] object-contain w-20 sm:w-24 md:w-28 lg:w-32 xl:w-[143px] shrink-0 max-w-full"
+              alt=""
+            />
           </div>
           <div className="w-full md:w-[84%] md:ml-5 mt-4 md:mt-0">
             <div className="flex grow flex-col items-stretch">
@@ -119,13 +123,13 @@ export const LifeAreasSection: React.FC = () => {
       </div>
       
       <LifeArea
-        icon="💪"
+        icon="https://pablomarcal.com.br/wp-content/uploads/2025/07/muscle.svg"
         title="Corpo"
         description="Vitalidade para sustentar o que você está construindo. Pra transformar, precisa ter energia. Chega de acordar cansada, improdutiva, ausente. Seu corpo precisa servir à sua missão — não te sabotar. Você vai aprender a se cuidar pra suportar a grandeza que quer construir."
       />
       
       <LifeArea
-        icon="🎤"
+        icon="https://pablomarcal.com.br/wp-content/uploads/2025/07/orar-1-1.svg"
         title="Voz"
         description="Fale com clareza, coragem e autenticidade. Chega de se esconder, de ter medo de se expor, de não conseguir comunicar seu valor. Aqui você vai encontrar sua voz verdadeira e aprender a usá-la com poder e propósito."
       />

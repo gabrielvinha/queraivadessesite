@@ -3,7 +3,7 @@ import React from 'react';
 export const FooterSection: React.FC = () => {
   return (
     <footer>
-      <section className="bg-[rgba(228,228,235,1)] self-stretch flex w-full flex-col items-center text-center justify-center mt-16 sm:mt-20 md:mt-24 lg:mt-28 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-12 sm:py-16 md:py-20 lg:py-24 rounded-[40px_40px_0px_0px]">
+      <section id="checkout" className="bg-[rgba(228,228,235,1)] self-stretch flex w-full flex-col items-center text-center justify-center mt-16 sm:mt-20 md:mt-24 lg:mt-28 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-12 sm:py-16 md:py-20 lg:py-24 rounded-[40px_40px_0px_0px]">
         <div className="flex w-full max-w-[708px] flex-col items-stretch">
           <h2 className="text-[rgba(8,9,20,1)] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.4] self-center">
             VOCÊ PRECISA DECIDIR:
@@ -14,13 +14,23 @@ export const FooterSection: React.FC = () => {
             <span className="md:hidden"> </span>riqueza da história acontecer…
           </p>
           <div className="flex w-full max-w-[668px] items-stretch gap-5 text-base sm:text-lg font-semibold flex-col sm:flex-row justify-between mt-6 sm:mt-8">
-            <button className="bg-[rgba(219,7,15,1)] flex flex-col items-stretch text-white leading-none justify-center px-8 sm:px-12 md:px-16 py-4 sm:py-5 md:py-6 rounded-[3px] hover:bg-[rgba(200,7,15,1)] transition-colors">
+            <button 
+              className="bg-[rgba(219,7,15,1)] flex flex-col items-stretch text-white leading-none justify-center px-8 sm:px-12 md:px-16 py-4 sm:py-5 md:py-6 rounded-[3px] hover:bg-[rgba(200,7,15,1)] transition-colors"
+              onClick={() => {
+                document.getElementById('checkout')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               SEM VOCÊ OU…
             </button>
             <div className="text-[rgba(122,122,122,1)] text-base sm:text-lg md:text-xl my-auto sm:my-2">
               ou
             </div>
-            <button className="bg-[rgba(47,250,15,1)] flex flex-col items-stretch text-[rgba(14,14,14,1)] leading-none justify-center px-8 sm:px-12 md:px-16 py-4 sm:py-5 md:py-7 rounded-[3px] hover:bg-[rgba(42,225,13,1)] transition-colors">
+            <button 
+              className="bg-[rgba(47,250,15,1)] flex flex-col items-stretch text-[rgba(14,14,14,1)] leading-none justify-center px-8 sm:px-12 md:px-16 py-4 sm:py-5 md:py-7 rounded-[3px] hover:bg-[rgba(42,225,13,1)] transition-colors"
+              onClick={() => {
+                document.getElementById('checkout')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               ENTRAR AGORA
             </button>
           </div>
