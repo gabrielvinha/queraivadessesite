@@ -2,11 +2,28 @@ import React from 'react';
 import { CTAButton } from './CTAButton';
 
 export const HeroSection: React.FC = () => {
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  const backgroundImage = isMobile 
+    ? 'url(https://i.postimg.cc/gJd49NB6/O-Brasil-est-entrando-em-colapso-e-quem-n-o-fizer-parte-da-nova-alian-a-vai-ser-engolido-N-o-somos.png)'
+    : 'url(https://i.postimg.cc/cCTwwXDw/O-Brasil-est-entrando-em-colapso-e-quem-n-o-fizer-parte-da-nova-alian-a-vai-ser-engolido-N-o-somos.png)';
+
   return (
     <section 
       className="flex flex-col relative min-h-screen w-screen justify-center overflow-hidden"
       style={{
-        backgroundImage: 'url(https://i.postimg.cc/cCTwwXDw/O-Brasil-est-entrando-em-colapso-e-quem-n-o-fizer-parte-da-nova-alian-a-vai-ser-engolido-N-o-somos.png)',
+        backgroundImage: backgroundImage,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
