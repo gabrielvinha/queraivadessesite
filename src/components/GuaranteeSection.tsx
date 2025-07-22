@@ -3,11 +3,6 @@ import React from 'react';
 export const GuaranteeSection: React.FC = () => {
   return (
     <section className="flex flex-col items-center px-50 sm:px-60 md:px-80">
-      <img
-        src="https://i.postimg.cc/C5h57p55/a58cfaf5-e5d1-4568-ba32-f067a979dc7b.png" 
-        className="aspect-[1] object-contain w-85 sm:w-209 md:w-68 lg:w-82 max-w-full mt-1.5"
-        alt="Guarantee badge"
-      />
       <h2 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.4] text-center mt-8 sm:mt-10 md:mt-12">
         Garantia incondicional de 15 dias
       </h2>
