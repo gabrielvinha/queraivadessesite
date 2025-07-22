@@ -4,17 +4,36 @@ import { CTAButton } from './CTAButton';
 export const HeroSection: React.FC = () => {
   return (
     <section 
-      className="flex flex-col relative min-h-screen w-screen justify-center overflow-hidden"
+      className="flex flex-col relative min-h-screen w-screen justify-center overflow-hidden hero-section"
       style={{
-        backgroundImage: 'url(https://i.postimg.cc/cCTwwXDw/O-Brasil-est-entrando-em-colapso-e-quem-n-o-fizer-parte-da-nova-alian-a-vai-ser-engolido-N-o-somos.png)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
         margin: '0',
         padding: '0'
       }}
     >
+      {/* Background com efeito zoom e blur */}
+      <div 
+        className="absolute inset-0 hero-background"
+        style={{
+          backgroundImage: 'url(https://i.postimg.cc/cCTwwXDw/O-Brasil-est-entrando-em-colapso-e-quem-n-o-fizer-parte-da-nova-alian-a-vai-ser-engolido-N-o-somos.png)',
+          backgroundSize: '120%',
+          backgroundPosition: 'center center',
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'fixed',
+          filter: 'blur(1px)',
+          transform: 'scale(1.1)',
+          zIndex: 0
+        }}
+      />
+      
+      {/* Overlay escuro para melhor contraste */}
+      <div 
+        className="absolute inset-0"
+        style={{
+          background: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2))',
+          zIndex: 1
+        }}
+      />
+      
       {/* Fireflies CSS Styles */}
       <style jsx>{`
         .firefly {
@@ -158,6 +177,51 @@ export const HeroSection: React.FC = () => {
           animation: firefly5 9.3s linear infinite, glow 2.5s ease-in-out infinite alternate;
           animation-delay: 7.5s, 3.8s;
         }
+        
+        .hero-section {
+          position: relative;
+        }
+        
+        .hero-background {
+          animation: zoomBlur 20s ease-in-out infinite alternate;
+        }
+        
+        @keyframes zoomBlur {
+          0% {
+            transform: scale(1.1);
+            filter: blur(1px);
+          }
+          50% {
+            transform: scale(1.15);
+            filter: blur(2px);
+          }
+          100% {
+            transform: scale(1.1);
+            filter: blur(1px);
+          }
+        }
+        
+        @media (max-width: 768px) {
+          .hero-background {
+            backgroundSize: '150%';
+            animation: zoomBlurMobile 15s ease-in-out infinite alternate;
+          }
+          
+          @keyframes zoomBlurMobile {
+            0% {
+              transform: scale(1.05);
+              filter: blur(0.5px);
+            }
+            50% {
+              transform: scale(1.1);
+              filter: blur(1px);
+            }
+            100% {
+              transform: scale(1.05);
+              filter: blur(0.5px);
+            }
+          }
+        }
       `}</style>
       
       {/* Fireflies Elements */}
@@ -184,7 +248,7 @@ export const HeroSection: React.FC = () => {
       <div className="absolute top-1/3 left-1/4 w-1 h-1 bg-[rgba(248,226,154,0.4)] rounded-full animate-pulse hidden md:block"></div>
       
       {/* Conteúdo principal */}
-      <div className="relative flex w-full max-w-[1200px] mx-auto flex-col items-start md:items-start items-center text-center md:text-left px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-8 sm:py-12 md:py-16 lg:py-20">
+      <div className="relative flex w-full max-w-[1200px] mx-auto flex-col items-start md:items-start items-center text-center md:text-left px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-8 sm:py-12 md:py-16 lg:py-20" style={{ zIndex: 2 }}>
         {/* Selo no topo */}
         <div className="text-[rgba(255,255,255,0.7)] text-sm sm:text-base md:text-lg lg:text-xl font-medium mb-4 sm:mb-6 md:mb-8" style={{ fontFamily: 'Poppins, sans-serif' }}>
           Mentoria Exclusiva para Mulheres que Querem Prosperar com Propósito
