@@ -2,20 +2,22 @@ import React from 'react';
 import { CTAButton } from './CTAButton';
 
 export const HeroSection: React.FC = () => {
-  const [isMobile, setIsMobile] = React.useState(false);
+  const [isNotDesktop, setIsNotDesktop] = React.useState(false);
 
   React.useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
+    const checkDevice = () => {
+      // Considera "não-desktop" qualquer dispositivo com largura menor que 1024px
+      // Isso inclui tablets, celulares e telas pequenas
+      setIsNotDesktop(window.innerWidth < 1024);
     };
     
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
+    checkDevice();
+    window.addEventListener('resize', checkDevice);
     
-    return () => window.removeEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkDevice);
   }, []);
 
-  const backgroundImage = isMobile 
+  const backgroundImage = isNotDesktop 
     ? 'url(https://i.postimg.cc/gJd49NB6/O-Brasil-est-entrando-em-colapso-e-quem-n-o-fizer-parte-da-nova-alian-a-vai-ser-engolido-N-o-somos.png)'
     : 'url(https://i.postimg.cc/cCTwwXDw/O-Brasil-est-entrando-em-colapso-e-quem-n-o-fizer-parte-da-nova-alian-a-vai-ser-engolido-N-o-somos.png)';
 
