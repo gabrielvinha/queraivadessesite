@@ -10,7 +10,7 @@ export const GuaranteeSection: React.FC = () => {
       <p className="text-black text-base sm:text-lg md:text-xl font-normal text-center mt-6 sm:mt-8 md:mt-10">
         Você tem 15 dias de garantia incondicional.
       </p>
-      <p className="text-[rgba(223,223,223,1)] text-base sm:text-lg md:text-xl font-normal leading-relaxed text-center mt-2.5">
+      <p className="text-black text-base sm:text-lg md:text-xl font-normal leading-relaxed text-center mt-2.5">
         Se por qualquer motivo sentir que não é o seu momento, devolvemos 100% do valor sem questionamentos.{" "}
         <span className="font-bold">
           Você entra com confiança — e decide com liberdade.
