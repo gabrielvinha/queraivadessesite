@@ -127,10 +127,7 @@ export const FeaturesSection: React.FC = () => {
           </div>
           
           <div className="mt-10 sm:mt-12 md:mt-16">
-            <CTAButton 
-              className="w-full max-w-[280px] sm:max-w-[350px] md:max-w-[450px] lg:max-w-[520px]"
-              scrollToCheckout={true}
-            >
+            <CTAButton className="w-full max-w-[280px] sm:max-w-[350px] md:max-w-[450px] lg:max-w-[520px]">
               QUERO VIVER MEU DESPERTAR
             </CTAButton>
           </div>

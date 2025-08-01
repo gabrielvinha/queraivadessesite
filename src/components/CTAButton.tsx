@@ -5,15 +5,13 @@ interface CTAButtonProps {
   className?: string;
   variant?: 'primary' | 'secondary';
   onClick?: () => void;
-  scrollToCheckout?: boolean;
 }
 
 export const CTAButton: React.FC<CTAButtonProps> = ({ 
   children, 
   className = '', 
   variant = 'primary',
-  onClick,
-  scrollToCheckout = false
+  onClick 
 }) => {
   const baseClasses = "flex items-stretch overflow-hidden text-[22px] font-bold text-center leading-none rounded-[100px] border-solid transition-all duration-200 hover:scale-105 max-lg:text-[20px] max-md:text-[18px] max-sm:text-[16px]";
   
@@ -24,15 +22,6 @@ export const CTAButton: React.FC<CTAButtonProps> = ({
   const handleClick = () => {
     if (onClick) {
       onClick();
-    } else if (scrollToCheckout) {
-      // Scroll suave para a seção de checkout
-      const checkoutSection = document.querySelector('[data-checkout-section]');
-      if (checkoutSection) {
-        checkoutSection.scrollIntoView({ 
-          behavior: 'smooth',
-          block: 'center'
-        });
-      }
     } else {
       // Default action: open WhatsApp
       const phoneNumber = "5519993401563";

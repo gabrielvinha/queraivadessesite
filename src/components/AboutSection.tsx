@@ -56,10 +56,7 @@ export const AboutSection: React.FC = () => {
 
             {/* CTA */}
             <div className="pt-8">
-              <CTAButton 
-                className="w-full max-w-[400px]"
-                scrollToCheckout={true}
-              >
+              <CTAButton className="w-full max-w-[400px]">
                 QUERO CONHECER A MENTORIA
               </CTAButton>
             </div>

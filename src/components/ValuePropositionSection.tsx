@@ -19,10 +19,7 @@ export const ValuePropositionSection: React.FC = () => {
             </span>
           </p>
           <div className="mt-5 sm:mt-6">
-            <CTAButton 
-              className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[420px]"
-              scrollToCheckout={true}
-            >
+            <CTAButton className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[420px]">
               QUERO COMEÇAR MINHA TRANSFORMAÇÃO
             </CTAButton>
           </div>

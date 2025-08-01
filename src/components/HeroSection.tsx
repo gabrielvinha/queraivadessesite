@@ -234,13 +234,10 @@ export const HeroSection: React.FC = () => {
           className="bg-[#F8E29A] text-[#1A1A1A] font-semibold text-sm sm:text-base md:text-lg px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 rounded-[40px] flex items-center gap-2 sm:gap-3 hover:bg-[#F5D982] transition-all duration-300 hover:scale-105"
           style={{ fontFamily: 'Montserrat, sans-serif' }}
           onClick={() => {
-            const checkoutSection = document.querySelector('[data-checkout-section]');
-            if (checkoutSection) {
-              checkoutSection.scrollIntoView({ 
-                behavior: 'smooth',
-                block: 'center'
-              });
-            }
+            const phoneNumber = "5519993401563";
+            const message = "Olá, eu vi sua página e quero saber mais sobre O Despertar da Vida!";
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
           }}
         >
           QUERO VIVER ESSA TRANSFORMAÇÃO
