@@ -75,7 +75,7 @@ export const PricingSection: React.FC = () => {
 
       <div className="bg-[rgba(24,27,33,1)] border flex w-full max-w-[640px] flex-col items-stretch text-white font-bold text-center mt-5 pt-6 sm:pt-8 pb-8 sm:pb-12 px-4 sm:px-6 md:px-8 rounded-[10px] border-[rgba(36,37,51,1)] border-solid mx-4">
         <img
-          src="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/3873aa4573db8c3b8a56379ae9283ba5f7d35967?placeholderIfAbsent=true"
+          src="https://i.postimg.cc/3wkHBd1Q/accesso-vitalicio-ao-material.png"
           className="aspect-[1.51] object-contain w-full rounded-[10px] max-md:max-w-full"
           alt=""
         />
