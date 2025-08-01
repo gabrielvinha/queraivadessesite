@@ -7,7 +7,7 @@ export const FooterSection: React.FC = () => {
         id="checkout" 
         className="self-stretch flex w-full flex-col items-center text-center justify-center mt-16 sm:mt-20 md:mt-24 lg:mt-28 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-12 sm:py-16 md:py-20 lg:py-24 rounded-[40px_40px_0px_0px] relative"
         style={{
-          backgroundImage: 'url(https://i.pinimg.com/originals/44/6e/3b/446e3b79395a287ca32f7977dd83b290.jpg)',
+          backgroundImage: 'url(https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?cs=srgb&dl=pexels-thatguycraig000-1563356.jpg&fm=jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
           backgroundAttachment: 'scroll',
