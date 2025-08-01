@@ -41,8 +41,8 @@ export const PricingSection: React.FC = () => {
           </div>
           <div>
             <BonusItem
-              image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/9a62666d8007ab73dc072b5a2da5db9646b348a1?placeholderIfAbsent=true"
-              title="Mentorias em grupo + PDF bônus"
+              image="https://i.postimg.cc/Pf8BJg3K/aula-de-comunicacao.png"
+              title="Aula de comunicação"
               price="R$997,00"
             />
           </div>
