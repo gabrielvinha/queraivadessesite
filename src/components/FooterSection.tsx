@@ -59,7 +59,7 @@ export const FooterSection: React.FC = () => {
               | Todos os direitos reservados
             </span>
             <br />
-            <span className="font-normal">CNPJ: 37676810/0001-72</span>
+            <span className="font-normal">CNPJ: 0000</span>
           </div>
         </div>
       </div>
