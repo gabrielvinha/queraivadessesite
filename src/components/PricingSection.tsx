@@ -54,7 +54,7 @@ export const PricingSection: React.FC = () => {
           <div>
             <div className="bg-[rgba(24,27,33,1)] border flex grow flex-col items-stretch text-base sm:text-lg md:text-xl text-white font-bold text-center leading-[1.4] w-full pt-6 sm:pt-8 pb-8 sm:pb-12 px-4 sm:px-6 md:px-8 rounded-[10px] border-[rgba(36,37,51,1)] border-solid">
               <img
-                src="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/f8e356ca82ef9b5ccfcd04f32eb458777efb37b1?placeholderIfAbsent=true"
+                src="https://i.postimg.cc/7YrYZMVG/aula-sobre-trafego.png"
                 className="aspect-[1.5] object-contain w-full rounded-[10px] max-md:max-w-full"
                 alt=""
               />
