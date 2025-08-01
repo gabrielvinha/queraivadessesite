@@ -61,8 +61,6 @@ export const FooterSection: React.FC = () => {
               {" "} 
               | Todos os direitos reservados
             </span>
-            <br />
-            <span className="font-normal">CNPJ: 0000</span>
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ export const CTAButton: React.FC<CTAButtonProps> = ({
   const baseClasses = "flex items-stretch overflow-hidden text-[22px] font-bold text-center leading-none rounded-[100px] border-solid transition-all duration-200 hover:scale-105 max-lg:text-[20px] max-md:text-[18px] max-sm:text-[16px]";
   
   const variantClasses = variant === 'primary' 
-    ? "bg-[rgba(39,253,1,1)] border text-black border-[rgba(103,166,1,1)] hover:bg-[rgba(35,230,1,1)]"
+    ? "bg-[#F8E29A] border text-black border-[#F8E29A] hover:bg-[#F5D982]"
     : "border text-white border-white hover:bg-white hover:text-black";
 
   const handleClick = () => {
