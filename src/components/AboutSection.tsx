@@ -19,7 +19,7 @@ export const AboutSection: React.FC = () => {
           <div className="order-2 lg:order-1">
             <div className="relative">
               <img
-                src="https://i.postimg.cc/Kzz4tnp7/backgourd-sobre-mim.png"
+                src="https://i.postimg.cc/jdJczfGr/fd5d2f6e-db5f-4307-b973-c99cbf5416d6.png"
                 className="w-full h-auto object-cover rounded-2xl shadow-2xl"
                 alt="Maria Flores"
               />
