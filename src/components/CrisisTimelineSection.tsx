@@ -85,7 +85,10 @@ export const CrisisTimelineSection: React.FC = () => {
           para quem você realmente é.
         </p>
         <div className="mt-6 sm:mt-8">
-          <CTAButton className="w-full max-w-[280px] sm:max-w-[350px] md:max-w-[450px] lg:max-w-[526px]">
+          <CTAButton 
+            className="w-full max-w-[280px] sm:max-w-[350px] md:max-w-[450px] lg:max-w-[526px]"
+            scrollToCheckout={true}
+          >
             QUERO DESPERTAR MINHA VIDA
           </CTAButton>
         </div>

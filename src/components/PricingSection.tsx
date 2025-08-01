@@ -316,7 +316,10 @@ export const PricingSection: React.FC = () => {
           </div>
           
           <div className="mt-6 sm:mt-8">
-            <CTAButton className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[420px] relative z-10">
+            <CTAButton 
+              className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[420px] relative z-10"
+              data-checkout-section
+            >
               QUERO FALAR COM A MENTORA
             </CTAButton>
           </div>

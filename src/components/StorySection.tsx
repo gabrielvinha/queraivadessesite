@@ -30,7 +30,10 @@ export const StorySection: React.FC = () => {
           <span className="max-md:inline"> </span>Com acolhimento, clareza, fé e técnica.
         </p>
         <div className="mt-6 sm:mt-8">
-          <CTAButton className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] mx-auto md:mx-0">
+          <CTAButton 
+            className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] mx-auto md:mx-0"
+            scrollToCheckout={true}
+          >
             EU QUERO DESPERTAR
           </CTAButton>
         </div>

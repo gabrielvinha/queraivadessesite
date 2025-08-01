@@ -12,7 +12,10 @@ export const PurposeSection: React.FC = () => {
           Despertar sua essência feminina, ativar seu propósito e transformar sua vida em todas as áreas.
         </p>
         <div className="mt-5 sm:mt-6">
-          <CTAButton className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[420px]">
+          <CTAButton 
+            className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[420px]"
+            scrollToCheckout={true}
+          >
             QUERO DESPERTAR MINHA VIDA
           </CTAButton>
         </div>
