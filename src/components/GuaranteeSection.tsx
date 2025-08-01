@@ -5,10 +5,10 @@ export const GuaranteeSection: React.FC = () => {
     <section className="flex flex-col items-center px-50 sm:px-60 md:px-80">
        
       <h2 className="text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.4] text-center mt-8 sm:mt-10 md:mt-12">
-        Garantia incondicional de 15 dias
+        Garantia incondicional de 7 dias
       </h2>
       <p className="text-black text-base sm:text-lg md:text-xl font-normal text-center mt-6 sm:mt-8 md:mt-10">
-        Você tem 15 dias de garantia incondicional.
+        Você tem 7 dias de garantia incondicional.
       </p>
       <p className="text-black text-base sm:text-lg md:text-xl font-normal leading-relaxed text-center mt-2.5">
         Se por qualquer motivo sentir que não é o seu momento, devolvemos 100% do valor sem questionamentos.{" "}
