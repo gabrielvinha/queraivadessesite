@@ -41,7 +41,10 @@ export const FooterSection: React.FC = () => {
             <button 
               className="bg-[rgba(47,250,15,1)] flex flex-col items-stretch text-[rgba(14,14,14,1)] leading-none justify-center px-8 sm:px-12 md:px-16 py-4 sm:py-5 md:py-7 rounded-[3px] hover:bg-[rgba(42,225,13,1)] transition-colors"
               onClick={() => {
-                document.getElementById('checkout')?.scrollIntoView({ behavior: 'smooth' });
+                const phoneNumber = "5519993401563";
+                const message = "Olá, eu vi sua página e quero saber mais sobre O Despertar da Vida!";
+                const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
               }}
             >
               ENTRAR AGORA
@@ -50,7 +53,7 @@ export const FooterSection: React.FC = () => {
         </div>
       </section>
 
-      <div className="border self-stretch flex w-full flex-col text-sm sm:text-base text-white font-bold text-center leading-6 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-6 sm:py-8 border-[rgba(51,51,51,1)] border-solid">
+      <div className="border self-stretch flex w-full flex-col text-sm sm:text-base text-black font-bold text-center leading-6 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-6 sm:py-8 border-[rgba(51,51,51,1)] border-solid bg-white">
         <div className="flex w-full max-w-[1052px] items-stretch gap-5 flex-col md:flex-row justify-between items-center mt-4 sm:mt-6">
           <div className="mt-4 sm:mt-8 md:mt-12 text-xs sm:text-sm order-2 md:order-1">
             <strong>MARIA FLOR 2025</strong>
