@@ -34,8 +34,8 @@ export const PricingSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div>
             <BonusItem
-              image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/0c19054bd118f6643aaf5b541bf5c978e83426da?placeholderIfAbsent=true"
-              title="Sessões com Psicóloga Convidada"
+              image="https://i.postimg.cc/hv5WFnp7/como-montar-sua-palestra.png"
+              title="Como montar a sua palestra"
               price="R$2.997,00"
             />
           </div>
