@@ -13,7 +13,7 @@ export const StorySection: React.FC = () => {
         <h2 className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight text-center md:text-left">
           NÃO FAZ SENTIDO VOCÊ
           <br />
-          CAMINHAR SOZINHO
+          CAMINHAR SOZINHA
         </h2>
         <p className="text-[rgba(215,215,215,1)] leading-relaxed mt-6 sm:mt-8 md:mt-10 text-center md:text-left">
           Você tentou sozinha.
