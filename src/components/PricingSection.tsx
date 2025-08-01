@@ -65,8 +65,8 @@ export const PricingSection: React.FC = () => {
           </div>
           <div>
             <BonusItem
-              image="https://api.builder.io/api/v1/image/assets/95a0d65e6e664f9083220b6878574efe/23e8b6ae03262ce29629b1099d90d2a7d9458141?placeholderIfAbsent=true"
-              title="Grupo VIP no WhatsApp"
+              image="https://i.postimg.cc/wMvMc61t/aula-de-oratoria.png"
+              title="Aula de oratória"
               price="R$997,00"
             />
           </div>
