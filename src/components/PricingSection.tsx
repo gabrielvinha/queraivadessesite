@@ -92,7 +92,7 @@ export const PricingSection: React.FC = () => {
       <div 
         className="self-stretch flex w-full flex-col items-center text-center justify-center mt-10 sm:mt-12 md:mt-16 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-12 sm:py-16 md:py-20 lg:py-24 relative overflow-hidden"
         style={{
-          backgroundImage: 'url(https://i.pinimg.com/originals/44/6e/3b/446e3b79395a287ca32f7977dd83b290.jpg)',
+          backgroundImage: 'url(https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?cs=srgb&dl=pexels-thatguycraig000-1563356.jpg&fm=jpg)',
           backgroundSize: 'cover', 
           backgroundPosition: 'center center',
           backgroundAttachment: 'scroll',
