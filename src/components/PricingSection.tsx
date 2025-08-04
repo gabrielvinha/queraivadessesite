@@ -308,11 +308,11 @@ export const PricingSection: React.FC = () => {
           </div>
           
           <div className="text-[rgba(255,205,138,1)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight mt-1.5">
-            R$290,00
+            R$390,00
           </div>
           
           <div className="text-[rgba(170,168,161,1)] text-lg sm:text-xl md:text-2xl font-normal leading-none mt-4 sm:mt-5 md:mt-6">
-            R$ 2.900,00 À VISTA
+            R$ 3.900,00 À VISTA
           </div>
           
           <div className="mt-6 sm:mt-8">
