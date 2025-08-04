@@ -8,7 +8,7 @@ export const AboutSection: React.FC = () => {
         {/* Título da Seção */}
         <div className="text-center mb-12 sm:mb-16 md:mb-20">
           <h2 className="text-[#1a1a1a] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
-            Sobre Mim
+            Sobre a autora
           </h2>
           <div className="w-24 h-1 bg-[#F8E29A] mx-auto rounded-full"></div>
         </div>
