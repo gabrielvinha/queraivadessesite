@@ -30,7 +30,10 @@ export const FooterSection: React.FC = () => {
             <button 
               className="bg-[rgba(219,7,15,1)] flex flex-col items-stretch text-white leading-none justify-center px-8 sm:px-12 md:px-16 py-4 sm:py-5 md:py-6 rounded-[3px] hover:bg-[rgba(200,7,15,1)] transition-colors"
               onClick={() => {
-                document.getElementById('checkout')?.scrollIntoView({ behavior: 'smooth' });
+                const targetElement = document.getElementById('quero-falar-com-a-mentora');
+                if (targetElement) {
+                  targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
               }}
             >
               SEM VOCÊ OU…
@@ -41,10 +44,10 @@ export const FooterSection: React.FC = () => {
             <button 
               className="bg-[rgba(47,250,15,1)] flex flex-col items-stretch text-[rgba(14,14,14,1)] leading-none justify-center px-8 sm:px-12 md:px-16 py-4 sm:py-5 md:py-7 rounded-[3px] hover:bg-[rgba(42,225,13,1)] transition-colors"
               onClick={() => {
-                const phoneNumber = "5519993401563";
-                const message = "Olá, eu vi sua página e quero saber mais sobre O Despertar da Vida!";
-                const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-                window.open(whatsappUrl, '_blank');
+                const targetElement = document.getElementById('quero-falar-com-a-mentora');
+                if (targetElement) {
+                  targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
               }}
             >
               ENTRAR AGORA

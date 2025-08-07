@@ -23,11 +23,11 @@ export const CTAButton: React.FC<CTAButtonProps> = ({
     if (onClick) {
       onClick();
     } else {
-      // Default action: open WhatsApp
-      const phoneNumber = "5519993401563";
-      const message = "Olá, eu vi sua página e quero saber mais!";
-      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-      window.open(whatsappUrl, '_blank');
+      // Default action: scroll to "QUERO FALAR COM A MENTORA" button
+      const targetElement = document.getElementById('quero-falar-com-a-mentora');
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 

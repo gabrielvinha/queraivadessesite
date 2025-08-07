@@ -90,7 +90,7 @@ export const LifeAreasSection: React.FC = () => {
           </div>
         </div>
         <p className="text-[rgba(231,231,231,1)] text-sm sm:text-base md:text-lg lg:text-xl font-normal leading-relaxed mt-4 sm:mt-5 md:mt-6">
-          A mentoria O Despertar da Vida foi criada pra quebrar essas correntes invisíveis. Aqui, você vai desbloquear traumas, emoções reprimidas e padrões herdados que te mantêm rodando em círculos. Libertar suas emoções é a chave pra liberar seu destino. E esse desbloqueio começa AGORA.
+          A mentoria O Despertar da Vida foi criada para quebrar essas correntes invisíveis. Aqui, você vai desbloquear traumas, emoções reprimidas e padrões herdados que te mantêm rodando em círculos. Libertar suas emoções é a chave para liberar seu destino. E esse desbloqueio começa AGORA.
         </p>
       </div>
       
@@ -125,7 +125,7 @@ export const LifeAreasSection: React.FC = () => {
       <LifeArea
         icon="https://pablomarcal.com.br/wp-content/uploads/2025/07/muscle.svg"
         title="Corpo"
-        description="Vitalidade para sustentar o que você está construindo. Pra transformar, precisa ter energia. Chega de acordar cansada, improdutiva, ausente. Seu corpo precisa servir à sua missão — não te sabotar. Você vai aprender a se cuidar pra suportar a grandeza que quer construir."
+        description="Vitalidade para sustentar o que você está construindo. Para transformar, precisa ter energia. Chega de acordar cansada, improdutiva, ausente. Seu corpo precisa servir à sua missão — não te sabotar. Você vai aprender a se cuidar para suportar a grandeza que quer construir."
       />
       
       <LifeArea

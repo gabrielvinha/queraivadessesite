@@ -26,7 +26,7 @@ export const StorySection: React.FC = () => {
         <p className="text-[rgba(215,215,215,1)] leading-relaxed mt-6 sm:mt-8 md:mt-10 text-center md:text-left">
           Essa mentoria é mais do que um curso.
           <br />É um reencontro.
-          <br />É um caminho estruturado pra você se libertar do que te trava e ativar tudo que já está em você.<br className="max-md:hidden" />
+          <br />É um caminho estruturado para você se libertar do que te trava e ativar tudo que já está em você.<br className="max-md:hidden" />
           <span className="max-md:inline"> </span>Com acolhimento, clareza, fé e técnica.
         </p>
         <div className="mt-6 sm:mt-8">

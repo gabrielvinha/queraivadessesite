@@ -316,9 +316,16 @@ export const PricingSection: React.FC = () => {
           </div>
           
           <div className="mt-6 sm:mt-8">
-            <CTAButton className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[420px] relative z-10">
+            <div id="quero-falar-com-a-mentora">
+              <CTAButton 
+                className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[420px] relative z-10"
+                onClick={() => {
+                  window.open('https://pay.kiwify.com.br/KSzKsEk', '_blank');
+                }}
+              >
               QUERO FALAR COM A MENTORA
-            </CTAButton>
+              </CTAButton>
+            </div>
           </div>
         </div>
       </div>

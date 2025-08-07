@@ -13,7 +13,7 @@ export const ValuePropositionSection: React.FC = () => {
             Está travada por histórias antigas que você ainda carrega.
           </p>
           <p className="font-normal leading-relaxed mt-2.5">
-            A mentoria O Despertar da Vida foi criada para mulheres que já entenderam que não dá mais pra adiar a própria história.{" "}
+            A mentoria O Despertar da Vida foi criada para mulheres que já entenderam que não dá mais para adiar a própria história.{" "}
             <span className="font-bold">
               É hora de florescer com força, verdade e propósito.
             </span>
