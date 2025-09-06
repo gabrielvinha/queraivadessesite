@@ -231,7 +231,7 @@ export const HeroSection: React.FC = () => {
         
         {/* Botão principal */}
         <CTAButton 
-          className="bg-[#F8E29A] text-[#1A1A1A] font-semibold text-sm sm:text-base md:text-lg px-6 sm:px-6 md:px-10 py-3 sm:py-4 md:py-5 rounded-[40px] flex items-center gap-2 sm:gap-3 hover:bg-[#F5D982] transition-all duration-300 hover:scale-105"
+          className="bg-[#F8E29A] text-[#1A1A1A] font-semibold text-sm sm:text-base md:text-lg px-6 sm:px-6 md:px-10 py-3 sm:py-4 md:py-5 rounded-[20px] flex items-center gap-2 sm:gap-3 hover:bg-[#F5D982] transition-all duration-300 hover:scale-105"
           style={{ fontFamily: 'Montserrat, sans-serif' }}
         >
           QUERO VIVER ESSA TRANSFORMAÇÃO
