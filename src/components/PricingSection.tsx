@@ -323,7 +323,7 @@ export const PricingSection: React.FC = () => {
                   window.open('https://pay.kiwify.com.br/KSzKsEk', '_blank');
                 }}
               >
-              QUERO FALAR COM A MENTORA
+              QUERO VIVER MEU DESPERTAR
               </CTAButton>
             </div>
           </div>
